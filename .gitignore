@@ -1,0 +1,42 @@
+# Raw data (too large for git)
+data/raw/
+
+# Processed data cache
+data/processed/*.json
+
+# ChromaDB vector store
+data/chroma/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Eval outputs (regeneratable)
+results/

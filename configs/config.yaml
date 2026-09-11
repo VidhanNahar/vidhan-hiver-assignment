@@ -1,0 +1,38 @@
+# AmazonHelp AI Support Agent — Configuration
+# Override via .env file or environment variables
+
+# Model settings
+pipeline_model: gpt-4o-mini
+judge_model: gpt-4o
+embedding_provider: local  # "local" (sentence-transformers) or "openai"
+
+# Data paths
+raw_data_path: data/raw/twcs.csv
+processed_data_path: data/processed/amazon_threads.json
+golden_set_path: data/golden/golden_set.json
+
+# RAG settings
+chroma_db_path: data/chroma
+retriever_top_k: 5
+retriever_index_size: 10000  # subsample size for vector index
+
+# Intent taxonomy
+intent_classes:
+  - Order Status / Tracking
+  - Refund / Return
+  - Delivery Problem
+  - Account / Login Issue
+  - Product / Service Question
+  - Prime / Subscription
+  - Complaint / Frustration
+  - Other / Miscellaneous
+
+# Escalation thresholds
+escalation:
+  low_confidence_threshold: 0.4
+  always_escalate_intents: []  # none by default; all intents can be auto-handled
+
+# Evaluation
+eval:
+  judge_batch_size: 10
+  calibration_sample_size: 50

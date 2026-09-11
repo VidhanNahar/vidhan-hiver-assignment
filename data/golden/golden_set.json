@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "golden_001",
+    "customer_text": "Hola buenas noches amigos de Amazon México, una pregunta, ¿como podría hacerme distribuidor o vendedor de Amazon, para vender en donde vivo?",
+    "customer_text_raw": "@116875 \nHola buenas noches amigos de Amazon México, una pregunta, ¿como podría hacerme distribuidor o vendedor de Amazon, para vender en donde vivo?",
+    "historical_brand_reply": "Hola, Carlos. Para saber cómo vender en Amazon puedes revisar el siguiente enlace que te brinda mayor información: [URL] ¡Suerte! ^ES",
+    "thread_id": "2800461__2800460",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General informational inquiry about becoming a seller, does not require private info or escalation.",
+      "notes": "Non-English (Spanish), polite inquiry about seller program."
+    }
+  },
+  {
+    "id": "golden_002",
+    "customer_text": "\"YOU'VE RUINED CHRISTMAS!\"",
+    "customer_text_raw": "@23921 @115830 \"YOU'VE RUINED CHRISTMAS!\"",
+    "historical_brand_reply": "Hi there, I am sorry to hear that. Without going into personal account info can you please tell us more about this? ^HS",
+    "thread_id": "527088__527086",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Extremely angry customer with a high-stakes emotional complaint.",
+      "notes": "All caps and high emotion, no specific order details provided."
+    }
+  },
+  {
+    "id": "golden_003",
+    "customer_text": "I just had the worst experience with @115821 ... 3 orders lost, I had to BEG for replacements and honoring the original price, it's been a week and I haven't seen any of them yet. Thanks Amazon Prime 😑",
+    "customer_text_raw": "I just had the worst experience with @115821 ... 3 orders lost, I had to BEG for replacements and honoring the original price, it's been a week and I haven't seen any of them yet. Thanks Amazon Prime 😑",
+    "historical_brand_reply": "This is not what we strive for. Did you receive an email with updates on the replacements? We are here to help! ^BA",
+    "thread_id": "352890__352887",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry about multiple lost orders and unfulfilled replacements, indicating a complex service failure requiring human intervention.",
+      "notes": "Mentions Amazon Prime, but the primary sentiment is intense frustration over lost orders and delayed replacements."
+    }
+  },
+  {
+    "id": "golden_004",
+    "customer_text": "gracias!!",
+    "customer_text_raw": "@AmazonHelp gracias!!",
+    "historical_brand_reply": "¡Es un placer poder ayudarte! 😊 ^ES",
+    "thread_id": "113728__113730",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Simple expression of gratitude, no escalation needed.",
+      "notes": "Non-English (Spanish), casual interaction."
+    }
+  },
+  {
+    "id": "golden_005",
+    "customer_text": "I am not satisfied with the product I got buying in amazon.in I would like to return ! What is the procedure ? Is it possible !",
+    "customer_text_raw": "@115850 I am not satisfied with the product I got buying in amazon.in I would like to return ! What is the procedure ? Is it possible !",
+    "historical_brand_reply": "Please check for the available options with our returns center: [URL] keep us posted for any further assistance. ^MJ",
+    "thread_id": "1050436__1050435",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting a return and asking for the procedure, which involves specific order details and potential refund processing.",
+      "notes": "The customer is asking both if it's possible and what the procedure is. Standard return policy information can be provided, but escalation ensures proper handling of the return request."
+    }
+  },
+  {
+    "id": "golden_006",
+    "customer_text": "Seems to be working now, without having cleared the cache. The issue was in both the app and the site, so caching wasn’t the issue. Thanks.",
+    "customer_text_raw": "@AmazonHelp Seems to be working now, without having cleared the cache. The issue was in both the app and the site, so caching wasn’t the issue. Thanks.",
+    "historical_brand_reply": "Glad everything is working properly. Thank you so much for keeping us posted. ^CO",
+    "thread_id": "644014__644015",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Issue resolved itself and customer is expressing thanks; no further action required.",
+      "notes": "Customer is following up to say the problem is fixed."
+    }
+  },
+  {
+    "id": "golden_007",
+    "customer_text": "Done that already sir",
+    "customer_text_raw": "@AmazonHelp Done that already sir",
+    "historical_brand_reply": "As you have filled the form, you will receive an email communication here: [URL] ^RW",
+    "thread_id": "182861__182860",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Low-context single response with no clear support issue requiring escalation.",
+      "notes": "Follow-up message with no prior context, likely part of an ongoing thread."
+    }
+  },
+  {
+    "id": "golden_008",
+    "customer_text": "order ending with 68349 , what is the refund status ? kindly help as executive committed over phone 2 resolve soon",
+    "customer_text_raw": "@115850 @AmazonHelp order ending with 68349 , what is the refund status ? kindly help as executive committed over phone 2 resolve soon",
+    "historical_brand_reply": "I'm afraid we can't view your details from Twitter. You may track the refund here: [URL] ^HA",
+    "thread_id": "323304__323302",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is asking about the refund status and referencing a prior phone commitment by an executive, which requires account/order lookup and potentially further action.",
+      "notes": "Mentions order ending in 68349 and a previous conversation with an executive."
+    }
+  },
+  {
+    "id": "golden_009",
+    "customer_text": "I am still waiting for a reply, I have tweeted, sent dm's and used the contact link I was given. Hope the parcel we have isn't urgent required by the person who bought it!",
+    "customer_text_raw": "@AmazonHelp I am still waiting for a reply, I have tweeted, sent dm's and used the contact link I was given. Hope the parcel we have isn't urgent required by the person who bought it!",
+    "historical_brand_reply": "Thank you for keeping us posted, we appreciate it. Were you able to get in touch with us via phone or chat? If so, what options did we provide for you? ^DW",
+    "thread_id": "170933__170931",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated after multiple failed attempts to contact support across different channels regarding a delayed parcel.",
+      "notes": "Expresses frustration about lack of response and potential urgency for the buyer."
+    }
+  },
+  {
+    "id": "golden_010",
+    "customer_text": "I have a ‘lost’ parcel but apparently unable to request a replacement. Why is this? What happens next?",
+    "customer_text_raw": "@115830 I have a ‘lost’ parcel but apparently unable to request a replacement. Why is this? What happens next?",
+    "historical_brand_reply": "Hey Natasha, sorry to hear that. Can I ask if the item was sold by us or one of our sellers?^TI",
+    "thread_id": "529952__529950",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is dealing with a lost parcel and unable to request a replacement themselves, requiring agent intervention.",
+      "notes": "Multi-intent question touching on delivery status and process for a replacement."
+    }
+  },
+  {
+    "id": "golden_011",
+    "customer_text": "I kneeeeew it was a bad idea preordered. I knew it.",
+    "customer_text_raw": "@115821 I kneeeeew it was a bad idea preordered. I knew it.",
+    "historical_brand_reply": "So sorry about this delivery! To confirm, who was the carrier? You can check here: [URL] ^BL",
+    "thread_id": "1360021__1360019",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing frustration over a pre-order, indicating potential churn risk or dissatisfaction requiring intervention.",
+      "notes": "No specific order details provided; purely emotional expression of regret."
+    }
+  },
+  {
+    "id": "golden_012",
+    "customer_text": "Amazonうぜえええええ！！！！ リップ買えないなら返金して欲しかったのになんでギフト券なの！！！！保留中で使えないしふざけんなよ😇🖕",
+    "customer_text_raw": "Amazonうぜえええええ！！！！\nリップ買えないなら返金して欲しかったのになんでギフト券なの！！！！保留中で使えないしふざけんなよ😇🖕",
+    "historical_brand_reply": "ご不快の念をお掛けしております。返金のAmazonギフト券は、銀行振込での返金に変更可能です。ご希望の場合は、口座情報などをお伺いする必要がございますので、お電話にてカスタマーサービスにお問い合わせください。[URL] TN",
+    "thread_id": "1138581__1138580",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated and demanding a cash refund instead of a gift card for an unfulfilled order.",
+      "notes": "Japanese language, contains strong profanity and anger, multi-issue regarding refund method and pending gift card balance."
+    }
+  },
+  {
+    "id": "golden_013",
+    "customer_text": "After talking to 3 customer service reps, in which one was a reorder fiasco. He was told that since the seller (Amazon) does not have any in stock there is no replacement. Can't he return it and someone leaves a note that says he gets a replacement when it is back in stock?",
+    "customer_text_raw": "@AmazonHelp After talking to 3 customer service reps, in which one was a reorder fiasco. He was told that since the seller (Amazon) does not have any in stock there is no replacement. Can't he return it and someone leaves a note that says he gets a replacement when it is back in stock?",
+    "historical_brand_reply": "I am sorry to hear the item is out of stock Mark. We cannot guarantee this item will be re-stocked again and this is the reason a replacement order would not be offered. Can I ask, what resolution was offered to you please?^GA",
+    "thread_id": "2984645__2984646",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated after dealing with multiple representatives and a failed reorder process, requiring agent intervention.",
+      "notes": "Mentions a 'reorder fiasco' and poor previous customer service experiences."
+    }
+  },
+  {
+    "id": "golden_014",
+    "customer_text": "昨日アマゾンで商品頼んだのに、一番すぐ用意できるものの支払い番号だけ来てないんやけど",
+    "customer_text_raw": "昨日アマゾンで商品頼んだのに、一番すぐ用意できるものの支払い番号だけ来てないんやけど",
+    "historical_brand_reply": "失礼いたします。お支払い番号の発行タイミングは、商品の在庫（入荷）状況や発送元などの要因によって異なります。[URL] 出荷準備が開始される段階で発行されます。恐れ入りますが、お知らせまで今しばらくお待ちください。SM",
+    "thread_id": "1268508__1268506",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Customer is asking about a missing payment number for an order, which can be handled through standard support without immediate escalation.",
+      "notes": "Non-English (Japanese). The user is asking why the payment number for the fastest-shipping item hasn't arrived yet after ordering yesterday."
+    }
+  },
+  {
+    "id": "golden_015",
+    "customer_text": "And u think I did not try this. There is no way to proceed further in this link. I need an exec to call me. I can DM my number if required.",
+    "customer_text_raw": "@AmazonHelp And u think I did not try this. There is no way to proceed further in this link. I need an exec to call me. I can DM my number if required.",
+    "historical_brand_reply": "You may request an immediate call from us using the link shared. Do you see any error while accessing the link? ^HK",
+    "thread_id": "419831__419833",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated with troubleshooting steps and explicitly requested a phone call from an executive, requiring private contact information.",
+      "notes": "Customer is asking for a callback and offering to share their phone number via DM."
+    }
+  },
+  {
+    "id": "golden_016",
+    "customer_text": "vous livrez de nuit ? 😂 [URL]",
+    "customer_text_raw": "@120533 vous livrez de nuit ? 😂 https://t.co/7peYDIfSGv",
+    "historical_brand_reply": "Bonsoir, Je suis désolée que votre colis soit en retard. Avez-vous contacté notre SAV pour leur faire part de la situation ? ^MD",
+    "thread_id": "2056406__2056405",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Non-English (French), humorous or sarcastic tone asking about night delivery."
+    }
+  },
+  {
+    "id": "golden_017",
+    "customer_text": "U please cancel my order",
+    "customer_text_raw": "@AmazonHelp U please cancel my order",
+    "historical_brand_reply": "We don't have access to orders via Twitter. Please reach out to us here: [URL] to go over your options.^CO",
+    "thread_id": "192321__192323",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting order cancellation, which requires account access and transaction modification.",
+      "notes": "Short, direct request."
+    }
+  },
+  {
+    "id": "golden_018",
+    "customer_text": "Contacted customer service many times. They say they will reach out to courier service. Still no contact from courier.",
+    "customer_text_raw": "@AmazonHelp Contacted customer service many times. They say they will reach out to courier service. Still no contact from courier.",
+    "historical_brand_reply": "Apologies for the experience. I'd request you to fill in your details here: [URL] and we will help you. ^OS",
+    "thread_id": "400310__400313",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated due to repeated unaddressed contacts regarding a delivery issue.",
+      "notes": "Indicates a recurring problem with poor communication between customer service and the courier."
+    }
+  },
+  {
+    "id": "golden_019",
+    "customer_text": "Amazonの縦長の段ボールに喜んでおります( ◠‿◠ )💖 #amazon #アマゾン #いや捨てさせて下さい #猫 [URL]",
+    "customer_text_raw": "Amazonの縦長の段ボールに喜んでおります( ◠‿◠ )💖\n#amazon #アマゾン #いや捨てさせて下さい #猫 https://t.co/8sZsPndmpI",
+    "historical_brand_reply": "縦長の箱にうまい具合にはまっている感…気に入っていただけたようで何よりです‼️😊✨ #いや捨てないでください #しばらくは RI",
+    "thread_id": "581917__581915",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "It is a positive/humorous tweet about a cat enjoying an Amazon box with no customer service request or issue needing escalation.",
+      "notes": "Japanese tweet containing humor/praise about cat playing in a box, non-English."
+    }
+  },
+  {
+    "id": "golden_020",
+    "customer_text": "Ne, ich meine einfach generell. Das was passieren würde, wenn ich sage \"Alexa, spiel Musik!\"",
+    "customer_text_raw": "@AmazonHelp Ne, ich meine einfach generell. Das was passieren würde, wenn ich sage \"Alexa, spiel Musik!\"",
+    "historical_brand_reply": "Derzeit benötigst du dazu noch zwei getrennte Bitten an Alexa. Ich leite deinen Wunsch/deine Anregung aber gern weiter. Viele Grüße ^DS",
+    "thread_id": "2427496__2427495",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General question about Alexa functionality that does not require escalation.",
+      "notes": "German language, asking about general voice command behavior for Alexa."
+    }
+  },
+  {
+    "id": "golden_021",
+    "customer_text": "could you please help me regarding an account that’s been locked",
+    "customer_text_raw": "@AmazonHelp could you please help me regarding an account that’s been locked",
+    "historical_brand_reply": "Hi, did you get an email from the account specialists about the account? Please check the spam/junk folders of your emails also as these emails are sometimes routed to those folders. ^JJ",
+    "thread_id": "2317871__2317869",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Requires access to user account and potentially sensitive verification steps.",
+      "notes": "Single intent, polite tone, but inherently requires secure account assistance."
+    }
+  },
+  {
+    "id": "golden_022",
+    "customer_text": "who writes you recommendation engine it is truly terrible offering me something I just bought again and the category is also wrong for it.",
+    "customer_text_raw": "@115821 who writes you recommendation engine it is truly terrible offering me something I just bought again and the category is also wrong for it.",
+    "historical_brand_reply": "Hey, sorry to hear that, can you send us a link? ^AS",
+    "thread_id": "2317300__2317298",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Customer is complaining about the recommendation engine, but it does not involve financial transactions, PII, or safety concerns.",
+      "notes": "Customer expresses frustration regarding the algorithm showing irrelevant products."
+    }
+  },
+  {
+    "id": "golden_023",
+    "customer_text": "What is this Answer??? completely and clear Is the people foolish ?? [URL]",
+    "customer_text_raw": "@118919 @115850  \nWhat is this Answer??? completely and clear \nIs the people foolish ?? https://t.co/pBhgNV5D1U",
+    "historical_brand_reply": "This doesn't seem genuine. Kindly refer to our website for genuine offers. ^VN",
+    "thread_id": "951831__951830",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and insulting support.",
+      "notes": "Aggressive tone, no specific technical issue mentioned."
+    }
+  },
+  {
+    "id": "golden_024",
+    "customer_text": "No information apart from Amazon Shipping",
+    "customer_text_raw": "@AmazonHelp No information apart from Amazon Shipping",
+    "historical_brand_reply": "Thanks for checking on the courier! We'd be happy to look into why your parcel wasn't delivered! Please phone or chat with us here: [URL] ^BN",
+    "thread_id": "2355266__2355268",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "The tweet is a fragment and does not require immediate intervention, private information, or financial action.",
+      "notes": "Incomplete message or ambiguous context."
+    }
+  },
+  {
+    "id": "golden_025",
+    "customer_text": "guys? Really? This delivery person really doesn't like me, how do I get refunded? How can food get damaged? [URL]",
+    "customer_text_raw": "@AmazonHelp guys? Really? This delivery person really doesn't like me, how do I get refunded? How can food get damaged? https://t.co/zj3iCiGUND",
+    "historical_brand_reply": "Hi, sorry about this damaged parcel.We will reimburse your payment card automatically and you will be emailed confirmation.^CR",
+    "thread_id": "1323928__1323927",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is asking for a refund for damaged goods and expressing frustration about the delivery.",
+      "notes": "Contains frustration/complaint alongside the refund request."
+    }
+  },
+  {
+    "id": "golden_026",
+    "customer_text": "when is the new season of madam Secretary streaming on your app?",
+    "customer_text_raw": "@119625 when is the new season of madam Secretary streaming on your app?",
+    "historical_brand_reply": "We haven't made any announcement on this yet. Kindly stay tuned. ^VN",
+    "thread_id": "1027557__1027555",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple content availability query that can be answered without account access.",
+      "notes": "Customer is asking about release dates for streaming content."
+    }
+  },
+  {
+    "id": "golden_027",
+    "customer_text": "Here or do u want me to send an email ?",
+    "customer_text_raw": "@AmazonHelp Here or do u want me to send an email ?",
+    "historical_brand_reply": "We're sorry about the cancellation, Annie. Please fill up this form: [URL] We'll contact you. ^HK",
+    "thread_id": "921199__1598676",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Simple procedural question about where to send information, does not require escalation.",
+      "notes": "Ambiguous context as it is a single isolated question; likely following up on a request for more details."
+    }
+  },
+  {
+    "id": "golden_028",
+    "customer_text": "Mein erstes Paket mit @116316 Logistics und schon eine Enttäuschung. Wenigstens war euer Support sehr nett.",
+    "customer_text_raw": "Mein erstes Paket mit @116316 Logistics und schon eine Enttäuschung. Wenigstens war euer Support sehr nett.",
+    "historical_brand_reply": "DAs freut mich, dass me ine Kollegen helfen konnten. ^DW",
+    "thread_id": "255038__255037",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "General complaint about a delivery with no explicit request for intervention or refund.",
+      "notes": "Tweet is in German. Contains both a complaint about delivery and positive feedback about support."
+    }
+  },
+  {
+    "id": "golden_029",
+    "customer_text": "My @115821 order hasn’t even shipped so I guess I’m looking at four day shipping now, at best. ☹️",
+    "customer_text_raw": "My @115821 order hasn’t even shipped so I guess I’m looking at four day shipping now, at best. ☹️",
+    "historical_brand_reply": "I'm sorry for the wait! What's the delivery date shown in your order confirmation e-mail here: [URL] ^SK",
+    "thread_id": "1110744__1110743",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing mild disappointment about shipping times, but it is a standard order status inquiry that does not require escalation.",
+      "notes": "Customer included an order ID (@115821) and a frown emoji indicating frustration, but it falls under a routine tracking inquiry."
+    }
+  },
+  {
+    "id": "golden_030",
+    "customer_text": "Was charged for kindle unlimited for 9 months in a row without noticing. I don’t even own a kindle. You guys offered to refund only $29 and I still haven’t received it.",
+    "customer_text_raw": "@AmazonHelp Was charged for kindle unlimited for 9 months in a row without noticing. I don’t even own a kindle. You guys offered to refund only $29 and I still haven’t received it.",
+    "historical_brand_reply": "Refunds will typically take 3-5 business days to get to you. Has this time passed? Did the rep give you a specific date to wait? ^VS",
+    "thread_id": "1326950__1326949",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting a refund for multiple months of unauthorized charges and states a promised refund of $29 has not been received.",
+      "notes": "Involves billing dispute, subscription charges without device ownership, and unfulfilled refund promise."
+    }
+  },
+  {
+    "id": "golden_031",
+    "customer_text": "Yes. Prime order made on the 29th. Deliver is the 4th of Dec? Order #702-7755580-8617807. Why bother paying for prime?",
+    "customer_text_raw": "@AmazonHelp Yes.  Prime order made on the 29th.  Deliver is the 4th of Dec?  Order #702-7755580-8617807.\nWhy bother paying for prime?",
+    "historical_brand_reply": "I'm sorry you haven't received your order. What was the delivery date given in your order confirmation e-mail? You can check your messages here: [URL] ^FJ",
+    "thread_id": "520642__520640",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about Prime delivery speeds and expressing frustration with the subscription value, referencing a specific order number.",
+      "notes": "Contains order number and expresses frustration regarding Prime shipping benefits."
+    }
+  },
+  {
+    "id": "golden_032",
+    "customer_text": "I placed an @116090 same day order this morning and it still hasn’t shipped. Why do I get the feeling it’s not showing up today? 🤔",
+    "customer_text_raw": "I placed an @116090 same day order this morning and it still hasn’t shipped. Why do I get the feeling it’s not showing up today? 🤔",
+    "historical_brand_reply": "Not to worry, we delivery up to 9pm! Let us know if it doesn't arrive by then! ^LS",
+    "thread_id": "2252890__2252889",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Simple inquiry about order status and delivery timing that can be checked via order number without requiring escalation.",
+      "notes": "Customer provided an order number in a slightly frustrated tone, but it remains a standard tracking query."
+    }
+  },
+  {
+    "id": "golden_033",
+    "customer_text": "hi who do I contact to complain bc there was an issue with something I ordered last week :)",
+    "customer_text_raw": "@AmazonHelp hi who do I contact to complain bc there was an issue with something I ordered last week :)",
+    "historical_brand_reply": "We'd like to help any way we can! Could you give us a few details about the issue without posting personal information? ^WM",
+    "thread_id": "714740__714733",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing a complaint about an order issue and needs assistance from customer support.",
+      "notes": "Customer used a smiley face but explicitly asked who to contact to complain about an order."
+    }
+  },
+  {
+    "id": "golden_034",
+    "customer_text": "so whats next?",
+    "customer_text_raw": "@AmazonHelp so whats next?",
+    "historical_brand_reply": "Have you contacted us through the link provided by MB? If so, what info/options did we provide you? ^GG",
+    "thread_id": "725280__725282",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "General question without enough context to warrant escalation.",
+      "notes": "Extremely brief and ambiguous message."
+    }
+  },
+  {
+    "id": "golden_035",
+    "customer_text": "why am i being charged for deliveries above 599? Even my pin code is not in remote area? [URL]",
+    "customer_text_raw": "@115850  why am i being charged for deliveries above 599? Even my pin code is not in remote area? https://t.co/57TDnvDJht",
+    "historical_brand_reply": "If the order contains seller fulfilled items, then the delivery charges are incurred as per the sellers. However, you can check this further with our team here: [URL] ^VN",
+    "thread_id": "2503603__2503602",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Query about unexpected delivery charges can be answered with standard policy information without needing private account access or escalation.",
+      "notes": "Customer is confused about shipping fee thresholds and location classification."
+    }
+  },
+  {
+    "id": "golden_036",
+    "customer_text": "I have already responded to your every email. Which more emails you want me to respond? I have provided you all the required data",
+    "customer_text_raw": "@AmazonHelp I have already responded to your every email. Which more emails you want me to respond?  I have provided you all the required data",
+    "historical_brand_reply": "Apologies for the experience, Dheeraj. Kindly reply to the email sent by our team(social media). We'll assist. ^SV",
+    "thread_id": "431207__431208",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration regarding repeated communication and requested data, requiring human intervention to resolve the loop.",
+      "notes": "Customer is visibly annoyed with the support process."
+    }
+  },
+  {
+    "id": "golden_037",
+    "customer_text": "Where's my package at @AmazonHelp??? My package was late for its 2 day and now have an underliverable today. At least give me my money back",
+    "customer_text_raw": "Where's my package at @AmazonHelp??? My package was late for its 2 day and now have an underliverable today. At least give me my money back",
+    "historical_brand_reply": "Sorry about your package. Can you please reach out directly via: [URL] we can discuss options with you. ^NV",
+    "thread_id": "317639__317638",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting a refund and experiencing a delivery failure.",
+      "notes": "Combines delivery problem and refund request; customer shows frustration."
+    }
+  },
+  {
+    "id": "golden_038",
+    "customer_text": "had an item gift arrive like this (attempted to peel label off). No outer packaging and clearly been opened (had another label saying checked). How do I give this as a Christmas gift? Looks awful and used! [URL]",
+    "customer_text_raw": "@AmazonHelp had an item gift arrive like this (attempted to peel label off). No outer packaging and clearly been opened (had another label saying checked). How do I give this as a Christmas gift? Looks awful and used! https://t.co/ZmvlFLAfST",
+    "historical_brand_reply": "Some items may ship in the manufacturer packaging. If applicable, there will be the option to \"ship in Amazon box\" during checkout. Additional information is available here: [URL] If item is damaged, check our options here: [URL] ^SK",
+    "thread_id": "531684__531683",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": true,
+      "escalation_reason": "Customer received a damaged or previously opened item meant as a gift and needs a replacement or resolution.",
+      "notes": "Customer is frustrated about the condition of a received item for a holiday gift."
+    }
+  },
+  {
+    "id": "golden_039",
+    "customer_text": "Would love to know why you \"guaranteed\" delivery for today on five separate orders, and then shipped then USPS which doesn’t deliver",
+    "customer_text_raw": "@115821 Would love to know why you \"guaranteed\" delivery for today on five separate orders, and then shipped then USPS which doesn’t deliver",
+    "historical_brand_reply": "Hi Logan! Deliveries can be made as late as 9:00pm, so keep a look out and please let us know when your package arrives. ^JD",
+    "thread_id": "387974__387971",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about multiple delayed orders and unfulfilled delivery guarantees.",
+      "notes": "Expressed frustration regarding carrier choice and missed delivery dates across multiple orders."
+    }
+  },
+  {
+    "id": "golden_040",
+    "customer_text": "I just tried that and still doesn't work ;-; It was for testing ssssshhhh",
+    "customer_text_raw": "@AmazonHelp I just tried that and still doesn't work ;-; It was for testing ssssshhhh",
+    "historical_brand_reply": "We'd be happy to look into this with you. Please reach out directly to us here: [URL] ^JA",
+    "thread_id": "1159103__1159104",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Technical troubleshooting that does not require account access, refunds, or safety intervention.",
+      "notes": "Customer is testing functionality and expressing mild frustration."
+    }
+  },
+  {
+    "id": "golden_041",
+    "customer_text": "Amazon適当にいるものポチってたら勝手にプライム会員にされてた",
+    "customer_text_raw": "Amazon適当にいるものポチってたら勝手にプライム会員にされてた",
+    "historical_brand_reply": "今回のご注文で、無料でお急ぎ便等をご利用されませんでしたか？ その場合、無料体験の登録となり、更新をOFFにしないと有料会員へ移行します。意図しないご加入で不要であれば、自動更新の設定変更をお願いします。[URL] TY",
+    "thread_id": "17218__17217",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is claiming an unauthorized Prime subscription charge and requires account review or cancellation.",
+      "notes": "Written in Japanese. Expresses frustration about unintended subscription signup."
+    }
+  },
+  {
+    "id": "golden_042",
+    "customer_text": "5 mins back received order. Why sending damaged product? Order Id: 408-1966445-1659532. It's clearly mentioned on the pack as \"Customer Damage\" then also sending to customer. Poor service. What's the meaning of amazon fulfilled service. Replace it. [URL]",
+    "customer_text_raw": "@AmazonHelp @115850 5 mins back received order. Why sending damaged product? Order Id: 408-1966445-1659532. It's clearly mentioned on the pack as \"Customer Damage\" then also sending to customer. Poor service. What's the meaning of amazon fulfilled service. Replace it. https://t.co/BmFg25rMj0",
+    "historical_brand_reply": "I'm sorry to know that the product you've received is damaged. May I know if you've reported this to our support team here: [URL] ? ^EM",
+    "thread_id": "2389707__2389708",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer received a damaged product and explicitly requested a replacement, which involves order handling and fulfillment issues.",
+      "notes": "Includes an order ID and expresses frustration with Amazon fulfilled service."
+    }
+  },
+  {
+    "id": "golden_043",
+    "customer_text": "Never use @115821 chat when u have concerns on your package! rude and will pass u to different people if they don’t want to deal with u 😡😡😡",
+    "customer_text_raw": "Never use @115821 chat when u have concerns on your package! rude and will pass u to different people if they don’t want to deal with u 😡😡😡",
+    "historical_brand_reply": "Hey Roxanne, I'm so sorry! Are you waiting on a package that's missed the promised delivery date? We're here to help! ^PF",
+    "thread_id": "1347554__1347553",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about poor service and rude behavior from support staff.",
+      "notes": "Expresses strong frustration with chat support."
+    }
+  },
+  {
+    "id": "golden_044",
+    "customer_text": "Hey @115830 could you advise as to why my next day deliveries are now taking 3 days to arrive, please? Thanks in advance.",
+    "customer_text_raw": "Hey @115830 could you advise as to why my next day deliveries are now taking 3 days to arrive, please? Thanks in advance.",
+    "historical_brand_reply": "Hey, since we are in a busy period, some orders might have extended delivery window: [URL] Is there an outstanding order you are having issues with?^MA",
+    "thread_id": "1996379__1996378",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "General inquiry about shipping delays that can be handled through standard customer service channels without requiring private account details upfront.",
+      "notes": "Customer is polite despite the service issue."
+    }
+  },
+  {
+    "id": "golden_045",
+    "customer_text": "I have doing followup since 1 month but issue is not yet resolved. it was siad i will get my money back on 11th oct but not yet recived.",
+    "customer_text_raw": "@AmazonHelp I have doing followup since 1 month but issue is not yet resolved. it was siad i will get my money back on 11th oct but not yet recived.",
+    "historical_brand_reply": "We regret about the delay. Please respond to our email and we'll check for an update. ^NR",
+    "thread_id": "249769__249770",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is following up on an unresolved refund issue past the promised date and expressing frustration.",
+      "notes": "Multi-intent implied (Complaint + Refund), customer is frustrated due to delay."
+    }
+  },
+  {
+    "id": "golden_046",
+    "customer_text": "Buenas @AmazonHelp llamé pero no me sirvió de gran ayuda Quiero mis estuches, por favor se lo pido",
+    "customer_text_raw": "Buenas @AmazonHelp llamé pero no me sirvió de gran ayuda\nQuiero mis estuches, por favor se lo pido",
+    "historical_brand_reply": "Hola, sin compartir información sensible como el número del pedido, ¿nos comentarías qué sucedió? ^HC",
+    "thread_id": "389909__389908",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer is demanding undelivered items after an unhelpful phone call, indicating frustration and a potentially unresolved delivery/order issue requiring further investigation.",
+      "notes": "Written in Spanish. Expresses dissatisfaction with previous phone support."
+    }
+  },
+  {
+    "id": "golden_047",
+    "customer_text": "Why is the tracker (uk) saying my Xbox One X will be delivered Wednesday rather than tomorrow? I preordered months ago",
+    "customer_text_raw": "@AmazonHelp Why is the tracker (uk) saying my Xbox One X will be delivered Wednesday rather than tomorrow? I preordered months ago",
+    "historical_brand_reply": "Thank you for reaching out! Was your delivery date changed from the original date stated in your confirmation e-mail? ^AR",
+    "thread_id": "1707960__1707958",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is asking about a delivery date change for a pre-ordered item, which can be handled with standard tracking tools."
+    }
+  },
+  {
+    "id": "golden_048",
+    "customer_text": "ご連絡ありがとうございます！ 頼んだ商品がまだ届かないのでどこにあるのか出品者に問い合わせしたら配送業者にご返事がないと連絡がきまして、配送先がhongkongpostなんですけど、調べたらなかなか追跡が出来ずどうやって問い合わせればいいか悩んでます、、、",
+    "customer_text_raw": "@AmazonHelp ご連絡ありがとうございます！\n頼んだ商品がまだ届かないのでどこにあるのか出品者に問い合わせしたら配送業者にご返事がないと連絡がきまして、配送先がhongkongpostなんですけど、調べたらなかなか追跡が出来ずどうやって問い合わせればいいか悩んでます、、、",
+    "historical_brand_reply": "ご心配をお掛けしております。お届け予定日は過ぎておりますでしょうか？予定日内である場合には、恐れ入りますが、いましばらくお待ちください。万が一予定日を過ぎても未着であった場合は、お手数ですが、再度出品者にお問い合わせください。 TN",
+    "thread_id": "723269__723267",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing a delivery delay and needs help tracking an international package with Hongkong Post that cannot be tracked.",
+      "notes": "Non-English (Japanese). The user is asking for assistance on how to contact or track a shipment with a specific carrier."
+    }
+  },
+  {
+    "id": "golden_049",
+    "customer_text": "Merci 👌",
+    "customer_text_raw": "@AmazonHelp Merci 👌",
+    "historical_brand_reply": "Je vous en prie. ^SB",
+    "thread_id": "2932742__2932743",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "The message is simply a brief expression of satisfaction and does not require any customer support action or escalation.",
+      "notes": "Non-English (French), simple acknowledgment or thanks."
+    }
+  },
+  {
+    "id": "golden_050",
+    "customer_text": "Thanks Ordered a lego advent calender for niece on 4th Nove and it is still showing as not dispatched and it was due foe delivery this week!",
+    "customer_text_raw": "@AmazonHelp Thanks\nOrdered a lego advent calender for niece on 4th Nove and it is still showing as not dispatched and it was due foe delivery this week!",
+    "historical_brand_reply": "Thank you for sending the screenshot, we can see this is meant to be with your niece by Thursday 16th of November by 8PM local time. It is not unusual for seasonal items to be shipped very close to delivery date. ^BD",
+    "thread_id": "2536445__2536447",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Order is past its due delivery week and still not dispatched, requiring manual intervention to check inventory or shipping status.",
+      "notes": "Customer expresses frustration regarding a delayed delivery date."
+    }
+  },
+  {
+    "id": "golden_051",
+    "customer_text": "I can’t. You let my account get hacked so I can’t sign in. And now this? I’m very disappointed",
+    "customer_text_raw": "@AmazonHelp I can’t. You let my account get hacked so I can’t sign in. And now this? I’m very disappointed",
+    "historical_brand_reply": "Hi Ollie - pls use this link to contact us : [URL] ^TD",
+    "thread_id": "1893369__1893371",
+    "heuristic_intent": "Account / Login Issue",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer reports account security breach/hacking and sign-in issues, which requires account verification and private support.",
+      "notes": "Customer expresses extreme disappointment and frustration alongside a security issue."
+    }
+  },
+  {
+    "id": "golden_052",
+    "customer_text": "if I’m paying for Prime yearly & I order something that’s eligible for “Prime” why in the fuck am I not getting my packages within the 2 day window? Get your shit together Amazon wtf",
+    "customer_text_raw": "@115821 if I’m paying for Prime yearly &amp; I order something that’s eligible for “Prime” why in the fuck am I not getting my packages within the 2 day window? Get your shit together Amazon wtf",
+    "historical_brand_reply": "I'm so sorry to hear your orders have been arriving later than expected! Have we missed the delivery date shown in your order confirmation e-mails here: [URL] ^JN",
+    "thread_id": "2528813__2528812",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and swearing, indicating a high-frustration issue requiring human intervention.",
+      "notes": "Combines a Prime subscription grievance with a failed delivery window expectation."
+    }
+  },
+  {
+    "id": "golden_053",
+    "customer_text": "#AmazonIndia #Amazon I had purchased Philips earphones a week before, and the price has fallen by Rs 60 today. Can I get any reimbursement??",
+    "customer_text_raw": "#AmazonIndia #Amazon I had purchased Philips earphones a week before, and the price has fallen by Rs 60 today. Can I get any reimbursement??",
+    "historical_brand_reply": "I understand your concern. However, we don't offer price match. For more info: [URL] ^HD",
+    "thread_id": "331265__331263",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting reimbursement for a price drop, which involves monetary adjustments.",
+      "notes": "Price match/drop reimbursement inquiry."
+    }
+  },
+  {
+    "id": "golden_054",
+    "customer_text": "I lost the case because I could not return damaged water to the seller; will not use Amzn again",
+    "customer_text_raw": "@AmazonHelp I lost the case because I could not return damaged water to the seller; will not use Amzn again",
+    "historical_brand_reply": "We'd like to help in any way we can by exploring our options with you; have you done the following: [URL] ^WM",
+    "thread_id": "1380464__1380463",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about a lost return case regarding damaged goods and threatens to churn (will not use Amzn again).",
+      "notes": "Customer expresses strong dissatisfaction and churn risk."
+    }
+  },
+  {
+    "id": "golden_055",
+    "customer_text": "Help por favor @AmazonHelp",
+    "customer_text_raw": "Help por favor @AmazonHelp",
+    "historical_brand_reply": "We're here for you! Without sharing account/order details, can you tell us what's going on? ^AH",
+    "thread_id": "666948__666946",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Too vague to determine specific need, requires initial customer clarification.",
+      "notes": "Non-English word 'por favor' included, brief and ambiguous."
+    }
+  },
+  {
+    "id": "golden_056",
+    "customer_text": "I've got a delivery coming today but it still hasn't been dispatched, does that mean it won't come",
+    "customer_text_raw": "@AmazonHelp I've got a delivery coming today but it still hasn't been dispatched, does that mean it won't come",
+    "historical_brand_reply": "Hello Mark! It's not uncommon for parcels to be dispatched on the same day as scheduled delivery. Please keep us in the loop if missed w/o any updates on why here: [URL] or here: [URL] ^TM",
+    "thread_id": "2783141__2783139",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "General order status inquiry that can be answered with standard tracking information without requiring human intervention.",
+      "notes": "Customer is asking about dispatch status and whether delivery will still occur today."
+    }
+  },
+  {
+    "id": "golden_057",
+    "customer_text": "The wastefulness of @115830 makes me so angry!! 🤬 [URL]",
+    "customer_text_raw": "The wastefulness of @115830 makes me so angry!! 🤬 https://t.co/JfhRj6DH2p",
+    "historical_brand_reply": "Thanks for letting us know, Emily! Please also share your packing feedback and pictures with our team here: [URL] ^CS",
+    "thread_id": "2238707__2238706",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": false,
+      "escalation_reason": "General complaint expressing anger without any request for refund, private info, or threat.",
+      "notes": "Contains strong emotion and a URL, but no actionable service request or escalation trigger."
+    }
+  },
+  {
+    "id": "golden_058",
+    "customer_text": "Having issues with packages stuck during delivery. Order on 11th October using prime still out for delivery, not required anymore.",
+    "customer_text_raw": "@115830 Having issues with packages stuck during delivery. Order on 11th October using prime still out for delivery, not required anymore.",
+    "historical_brand_reply": "Oh no! We'd be more than happy to help! Reach us via phone/chat and we'll sort this out together: [URL] ^KN",
+    "thread_id": "2530497__2530496",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing a delivery delay and no longer requires the item, likely necessitating a return, cancellation, or refund intervention.",
+      "notes": "Mentions using Prime and references a specific order date (11th October), but no specific order number is provided in the tweet."
+    }
+  },
+  {
+    "id": "golden_059",
+    "customer_text": "amazon.in gift card on no cost emi offer for order 402-9517473-6565947 not received yet. Amazon Help unable to help",
+    "customer_text_raw": "@115850  amazon.in gift card on no cost emi offer for order 402-9517473-6565947 not received yet. Amazon Help unable to help",
+    "historical_brand_reply": "we'll get back to you soon. Please don't provide your order details, as we consider it to be personal information. 2/2^AP",
+    "thread_id": "431196__431194",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting a missing gift card on a specific order and states that standard support was unable to help.",
+      "notes": "Includes order ID; multi-step issue since standard help failed."
+    }
+  },
+  {
+    "id": "golden_060",
+    "customer_text": "Hey @115821 why can't I preorder LA Noire in the US? What's the point of Amazon Prime if I can't use the sole reason I purchased it?",
+    "customer_text_raw": "Hey @115821 why can't I preorder LA Noire in the US? What's the point of Amazon Prime if I can't use the sole reason I purchased it?",
+    "historical_brand_reply": "Oh no! Which platform are you playing on? ^BE",
+    "thread_id": "2312003__2312001",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing frustration about a specific Prime benefit (preorder discount/availability) not working as expected.",
+      "notes": "Mentions Amazon Prime and preordering a specific game in the US."
+    }
+  },
+  {
+    "id": "golden_061",
+    "customer_text": "Comprei um Kindle na @117804 as 5:30 da tarde 9 da noite na enviaram",
+    "customer_text_raw": "Comprei um Kindle na @117804 as 5:30 da tarde 9 da noite na enviaram",
+    "historical_brand_reply": "Olá! Conte para nós, você sabe qual conteúdo vai ler no seu Kindle?. Ficamos curiosos. 🤔😃 ^NB",
+    "thread_id": "120154__120152",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "The customer is inquiring about why their order hasn't shipped yet a few hours after purchase, which is a standard status inquiry and does not require escalation.",
+      "notes": "Written in Portuguese. The user is questioning the fast shipping expectation."
+    }
+  },
+  {
+    "id": "golden_062",
+    "customer_text": "I’ve been very disappointed with @115821 the past year or so. I keep getting my prime orders late. I just had to cancel another late order because it’s not going to be here in time for my work’s donation to the @136275. I ordered it a week in advance.",
+    "customer_text_raw": "I’ve been very disappointed with @115821 the past year or so. I keep getting my prime orders late. I just had to cancel another late order because it’s not going to be here in time for my work’s donation to the @136275. I ordered it a week in advance.",
+    "historical_brand_reply": "I'm very sorry to hear about these delivery issues you've been experiencing, Mitsy! That's definitely not the service we take pride in providing. Have you noticed any trend in the carrier for these late orders? You can check here: [URL] ^TH",
+    "thread_id": "93546__93544",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration over repeated delivery failures regarding Prime orders and has cancelled an order, requiring intervention.",
+      "notes": "Mentions handles @115821 and @136275; combines Prime subscription issues with delivery problems and frustration."
+    }
+  },
+  {
+    "id": "golden_063",
+    "customer_text": "Does not even have a date at all. This item was already released over a week ago and I don't have my item. I just want to know why they didn't prioritize my pre-order before regular orders? [URL]",
+    "customer_text_raw": "@AmazonHelp Does not even have a date at all. This item was already released over a week ago and I don't have my item. I just want to know why they didn't prioritize my pre-order before regular orders? https://t.co/e2OEca3DfJ",
+    "historical_brand_reply": "I'm sorry, I know we let you down this time and I hope you're able to give us another chance in the future to make things right. We'll send an e-mail confirmation once we have them stock however, we'd completely understand if you'd like to cancel your order. ^EB",
+    "thread_id": "2361815__2361818",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about a delayed pre-order and asking for specific order fulfillment details.",
+      "notes": "Expresses frustration regarding pre-order prioritization and missing delivery date."
+    }
+  },
+  {
+    "id": "golden_064",
+    "customer_text": "Take it nothings going to be done then as no reply for 17 hours!!",
+    "customer_text_raw": "@AmazonHelp Take it nothings going to be done then as no reply for 17 hours!!",
+    "historical_brand_reply": "Hi, have you been able to check with close neighbours who may be holding a parcel? ^TS",
+    "thread_id": "2588272__2588274",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration and anger regarding delayed support response.",
+      "notes": "Indicates previous lack of response; needs urgent de-escalation."
+    }
+  },
+  {
+    "id": "golden_065",
+    "customer_text": "so my amazon fire stick was delivered today and i love it but instead of knocking on my door to deliver it they left it outside on the step where it could’ve been nicked🤷🏻‍♀️",
+    "customer_text_raw": "@115821 so my amazon fire stick was delivered today and i love it but instead of knocking on my door to deliver it they left it outside on the step where it could’ve been nicked🤷🏻‍♀️",
+    "historical_brand_reply": "I'm sorry for the inconvenience this has caused; is the Fire TV Stick damaged in any way? Were you provided with a note regarding your order placement? ^WM",
+    "thread_id": "2958669__2958667",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": null,
+      "notes": "Customer is giving feedback on delivery placement rather than reporting a lost package, so escalation is not required."
+    }
+  },
+  {
+    "id": "golden_066",
+    "customer_text": "Hi I have not received my package but got an SMS that it is delivered can you check on this.? ORDER # 407-1059243-5547528",
+    "customer_text_raw": "@AmazonHelp Hi I have not received my package but got an SMS that it is delivered can you check on this.? ORDER # 407-1059243-5547528",
+    "historical_brand_reply": "Please don't provide your order details. We consider it to be personal information. Our page is visible to the public. 2/2^AR",
+    "thread_id": "1045014__1045013",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "Standard delivery check that can be handled through regular support channels using the provided order number.",
+      "notes": "Customer provided order number and clear description of a missing package marked as delivered."
+    }
+  },
+  {
+    "id": "golden_067",
+    "customer_text": "Can you ship to Pakistan?",
+    "customer_text_raw": "@115821 Can you ship to Pakistan?",
+    "historical_brand_reply": "Hey there, thanks for asking. Currently, we ship to the countries listed here: [URL] ^DW",
+    "thread_id": "308900__308899",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General shipping inquiry that can be answered with standard policy information.",
+      "notes": "Simple, direct question about international shipping capabilities."
+    }
+  },
+  {
+    "id": "golden_068",
+    "customer_text": "Amazonから支払い番号が来ないんだけどどうすればいいの",
+    "customer_text_raw": "Amazonから支払い番号が来ないんだけどどうすればいいの",
+    "historical_brand_reply": "ご心配をおかけしております。お支払い番号は商品が確保されてから発行されます。お届け予定日(予約商品の場合、発売日前後)を目安にお待ちください。なお、発行後であればアカウントサービス＞メッセージセンター＞その他からもご確認いただけます。HM",
+    "thread_id": "532695__532694",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Requires access to specific order details and payment information, which involves private user data.",
+      "notes": "Written in Japanese. Customer is asking how to receive a payment number from Amazon."
+    }
+  },
+  {
+    "id": "golden_069",
+    "customer_text": "EB you need to give me the estimated delivery date.... status says “ we need more time to provide you with a good estimate”. I ask: WHEN?!!",
+    "customer_text_raw": "@AmazonHelp EB you need to give me the estimated delivery date.... status says “ we need more time to provide you with a good estimate”. I ask: WHEN?!!",
+    "historical_brand_reply": "Please contact us here: [URL] so we can look into this and go over your options. ^CO",
+    "thread_id": "2914478__2914479",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is frustrated by a delayed delivery estimate, but the issue can be resolved with standard tracking information without requiring escalation."
+    }
+  },
+  {
+    "id": "golden_070",
+    "customer_text": "So now its either i) not delivered ii) delivered to a wrong address - how is this even possible? checked with all my neighbours iii) left outside now in conditions that would ruin the product. I mean honestly its a shambles.",
+    "customer_text_raw": "@AmazonHelp So now its either i) not delivered ii) delivered to a wrong address - how is this even possible? checked with all my neighbours iii) left outside now in conditions that would ruin the product. I mean honestly its a shambles.",
+    "historical_brand_reply": "I'm glad that this is being investigated. We'd like to make sure this is sorted for you. Please keep us posted on the outcome of your call. ^RA",
+    "thread_id": "2956010__2956013",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated and reporting a failed delivery / mishandled package requiring investigation.",
+      "notes": "Multiple delivery failure scenarios mentioned, highly emotional and negative tone."
+    }
+  },
+  {
+    "id": "golden_071",
+    "customer_text": "AMAZON NOT RESOLVING THE CASE DISCONNECTING THE CALLS..PROMISING CALL BACK BUT NOT GIVING ANY CALL BACK...@118919,@17786,@115851,@115850,@106290,@4032,@120320,@106291,@106292,@137849,@135979,@120844,@1145",
+    "customer_text_raw": "AMAZON NOT RESOLVING THE CASE DISCONNECTING THE CALLS..PROMISING CALL BACK BUT NOT GIVING ANY CALL BACK...@118919,@17786,@115851,@115850,@106290,@4032,@120320,@106291,@106292,@137849,@135979,@120844,@1145",
+    "historical_brand_reply": "I'm sorry your concern hasn't been resolved. We'd like to look into it. Kindly share the relevant details here: [URL] we'll reach out to you soon. ^AP",
+    "thread_id": "2763587__2763586",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry about unresolved issues, disconnected calls, and broken promises of a callback.",
+      "notes": "Includes a large number of handle tags, indicating widespread tagging of support accounts."
+    }
+  },
+  {
+    "id": "golden_072",
+    "customer_text": "The greatest thing happened to me today and it’s that @115821 delivered two brand new pairs of @104313 leggings to my door and now I’m in such a better mood #leggingsalways",
+    "customer_text_raw": "The greatest thing happened to me today and it’s that @115821 delivered two brand new pairs of @104313 leggings to my door and now I’m in such a better mood #leggingsalways",
+    "historical_brand_reply": "Yey! Thanks, Keri, for letting us know your order arrived safely. I hope you enjoy your leggings! ^NN",
+    "thread_id": "2706717__2706716",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Positive customer feedback, no action required.",
+      "notes": "Customer is expressing praise and happiness about a delivery."
+    }
+  },
+  {
+    "id": "golden_073",
+    "customer_text": "estoy tratando de ver la temporada 1 de #fearthewalkingdead pero el audio no cambia a inglés ni/o español. Ayuda por favor!!",
+    "customer_text_raw": "@123813 estoy tratando de ver la temporada 1 de #fearthewalkingdead pero el audio no cambia a inglés ni/o español. Ayuda por favor!!",
+    "historical_brand_reply": "Hola, Luis. ¿Has seguido estas indicaciones: [URL] ^JQ",
+    "thread_id": "366949__366948",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple streaming/audio troubleshooting issue that can be handled with standard instructions without needing escalation.",
+      "notes": "Customer message is in Spanish and concerns media playback."
+    }
+  },
+  {
+    "id": "golden_074",
+    "customer_text": "Parece ser que en Android no puedo ver libros compartidos conmigo de una cuenta falmiliar enlazada :( ¿Alguna guía? Gracias",
+    "customer_text_raw": "@116928 Parece ser que en Android no puedo ver libros compartidos conmigo de una cuenta falmiliar enlazada :( ¿Alguna guía? Gracias",
+    "historical_brand_reply": "¿Has intentado contactar con nuestro Equipo de Servicio al Cliente? ^VL",
+    "thread_id": "351888__351886",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "It is a standard technical question about how to view shared books, requiring no private info or financial resolution.",
+      "notes": "Written in Spanish. Asks for a guide/instructions on Android family sharing."
+    }
+  },
+  {
+    "id": "golden_075",
+    "customer_text": "Hey AMAZON where is my order? Its a month now. Why does your site prevent my contacting you? No futher purchases until this is resolved.",
+    "customer_text_raw": "Hey AMAZON where is my order? Its a month now.  Why does your site prevent my contacting you? \nNo futher purchases until this is resolved.",
+    "historical_brand_reply": "I'm sorry for the wait. What is the delivery date/tracking provided for your order: [URL] ^JA",
+    "thread_id": "1794072__1794071",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry about a month-long delay and threatening to stop purchases.",
+      "notes": "Multi-intent implied (Order status, website contact issue, complaint), high frustration level."
+    }
+  },
+  {
+    "id": "golden_076",
+    "customer_text": "But, the above URL takes me to Amazon India website & not the [URL]",
+    "customer_text_raw": "@AmazonHelp But, the above URL takes me to Amazon India website &amp; not the https://t.co/lPtuTSQShv",
+    "historical_brand_reply": "Could you please confirm if you've purchase the order from Amazon.in or [URL] ^AM",
+    "thread_id": "1723393__1723399",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is reporting a URL redirection issue to the wrong regional site."
+    }
+  },
+  {
+    "id": "golden_077",
+    "customer_text": "one of the worst customer service experience with Amazon India. Ordered an item on 5th and today is 8th no update?",
+    "customer_text_raw": "@115850 one of the worst customer service experience with Amazon India. Ordered an item on 5th and today is 8th no update?",
+    "historical_brand_reply": "Sorry about that. Could you tell us the delivery date that was promised while placing the order? ^SK",
+    "thread_id": "360241__360239",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration and a delayed delivery issue.",
+      "notes": "Expresses negative customer experience regarding delivery timing."
+    }
+  },
+  {
+    "id": "golden_078",
+    "customer_text": "may I know why ? [URL]",
+    "customer_text_raw": "@115850 @115821 @AmazonHelp may I know why ? https://t.co/k47JSR8Ezq",
+    "historical_brand_reply": "Apologies for the trouble. You may get in touch with our support team here: [URL] by selecting email/chat option, so that we can assist you accordingly. ^MN",
+    "thread_id": "694353__694351",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple inquiry that does not require escalation.",
+      "notes": "Extremely brief message with a URL; lacks context but does not trigger escalation criteria."
+    }
+  },
+  {
+    "id": "golden_079",
+    "customer_text": "Detail submitted now pls do the needful asap",
+    "customer_text_raw": "@AmazonHelp Detail submitted now pls do the needful asap",
+    "historical_brand_reply": "We've received your details. We'll get in touch with you at the earliest. ^HD",
+    "thread_id": "356748__356749",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer is asking for urgent action on previously submitted details, likely involving private account or order information.",
+      "notes": "Very brief and demanding phrasing ('do the needful asap')."
+    }
+  },
+  {
+    "id": "golden_080",
+    "customer_text": "oui l'article est dispo et indiqué en livraison prime et vendu par amazon. J'en ai marre de payer un abo pour rien donc j'arrête",
+    "customer_text_raw": "@AmazonHelp oui l'article est dispo et indiqué en livraison prime et vendu par amazon. J'en ai marre de payer un abo pour rien donc j'arrête",
+    "historical_brand_reply": "Je vous prie de nous envoyer le lien vers l'article en question afin de vérifier.^FT",
+    "thread_id": "395994__395995",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated and expressing intent to cancel their subscription due to perceived lack of value.",
+      "notes": "French language. Multi-intent: mentions product availability/Prime shipping as context, but primary action is subscription cancellation / complaint."
+    }
+  },
+  {
+    "id": "golden_081",
+    "customer_text": "昨日の夕方に注文したのに今日のお昼に届くとは…さすがAmazon様…🙌",
+    "customer_text_raw": "昨日の夕方に注文したのに今日のお昼に届くとは…さすがAmazon様…🙌",
+    "historical_brand_reply": "ご利用ありがとうございますっΣd(*`･∀･´*) SM",
+    "thread_id": "2529313__2529312",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing positive feedback and praise, requiring no escalation or support action.",
+      "notes": "Written in Japanese. Expresses satisfaction with fast delivery."
+    }
+  },
+  {
+    "id": "golden_082",
+    "customer_text": "I have tried going through the amazon subscription option but I still can’t go in.",
+    "customer_text_raw": "@AmazonHelp @AmazonHelp I have tried going through the amazon subscription option but I still can’t go in.",
+    "historical_brand_reply": "Please contact us directly so we can take a closer look at this: [URL] ^SB",
+    "thread_id": "2294238__2294239",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing access issues related to a subscription, which likely requires checking account details and secure troubleshooting.",
+      "notes": "Mentions inability to access the subscription option, suggesting a login or account restriction issue."
+    }
+  },
+  {
+    "id": "golden_083",
+    "customer_text": "May as well throw your parcel from their warehouse, it would probably arrive less damaged than my past 3 parcels 😂👍 #amazonprime",
+    "customer_text_raw": "@115830 May as well throw your parcel from their warehouse, it would probably arrive less damaged than my past 3 parcels 😂👍 #amazonprime",
+    "historical_brand_reply": "We're sorry your parcels arrived damaged! Let's look into return/replacement options here: [URL] ^ZW",
+    "thread_id": "1396130__1396128",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing severe frustration about repeated damaged deliveries.",
+      "notes": "Sarcastic tone regarding delivery quality; includes #amazonprime hashtag."
+    }
+  },
+  {
+    "id": "golden_084",
+    "customer_text": "I have given feedback many times. I am angry about the response I receive. One month of prime does not make up for deception by employees.",
+    "customer_text_raw": "@AmazonHelp I have given feedback many times. I am angry about the response I receive. One month of prime does not make up for deception by employees.",
+    "historical_brand_reply": "I'd like a member of our team to look into this for you. Please provide all the details you can here: [URL] ^JN",
+    "thread_id": "713338__713339",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and expressing ongoing frustration regarding perceived employee deception and inadequate compensation.",
+      "notes": "Expresses strong dissatisfaction with previous customer service responses and compensation offered."
+    }
+  },
+  {
+    "id": "golden_085",
+    "customer_text": "worst service from Amazon. Bought this watch and got defected one. I am a regular user of Amazon but never expected this kind of service. Need to improve your service.",
+    "customer_text_raw": "@115850 worst service from Amazon. Bought this watch and got defected one. I am a regular user of Amazon but never expected this kind of service. Need to improve your service.",
+    "historical_brand_reply": "I'm sorry you've received a defective product. Please report it to our support team here: [URL] we'll look into it and help you. ^AP",
+    "thread_id": "2536374__2536373",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer received a defective product and is expressing strong dissatisfaction with the service.",
+      "notes": "Expresses general frustration and disappointment with a defective item, suggesting a replacement or return will likely be needed."
+    }
+  },
+  {
+    "id": "golden_086",
+    "customer_text": "Hi, some help would be good! ie an answer to my question...",
+    "customer_text_raw": "@AmazonHelp Hi, some help would be good! ie an answer to my question...",
+    "historical_brand_reply": "You can add items to your \"Save for Later\" section in your cart. This will hold the items until you're ready to add them back to your cart. You can find more info here: [URL] ^HS",
+    "thread_id": "551849__551850",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple query without details yet; does not require escalation until the actual question is asked.",
+      "notes": "Vague initial message with no specific issue or question provided yet."
+    }
+  },
+  {
+    "id": "golden_087",
+    "customer_text": "pls how long does it take to Ship to Nigeria",
+    "customer_text_raw": "@AmazonHelp pls how long does it take to Ship to Nigeria",
+    "historical_brand_reply": "Hello! This resource has information that may be able to assist you: [URL] ^SA",
+    "thread_id": "2435038__2435037",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General shipping timeframe inquiry that can be answered with standard policy information.",
+      "notes": "Simple query about international shipping to Nigeria."
+    }
+  },
+  {
+    "id": "golden_088",
+    "customer_text": "Wird die Serie #Oasis weiter produziert? Lange nichts nach der Pilotfolge gehört? Danke im Voraus",
+    "customer_text_raw": "@115825 Wird die Serie #Oasis weiter produziert? Lange nichts nach der Pilotfolge gehört? Danke im Voraus",
+    "historical_brand_reply": "Hi, hier gibts es aktuell noch keine Informationen. Und wir werden uns wohl gemeinsam noch gedulden müssen. :-( Gruß ^JS",
+    "thread_id": "982014__982013",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple informational query about a series status that can be answered with standard support knowledge.",
+      "notes": "Written in German; asks about the continuation of the series 'Oasis' after the pilot episode."
+    }
+  },
+  {
+    "id": "golden_089",
+    "customer_text": "requested replacement item as wrong item received still no news on either return or replacement! Help! [URL]",
+    "customer_text_raw": "@AmazonHelp requested replacement item as wrong item received still no news on either return or replacement! Help! https://t.co/4Uv0fi6ril",
+    "historical_brand_reply": "Hi, can you get in touch with us here: [URL] we'd be happy to help ^AS",
+    "thread_id": "233505__233502",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is following up on a missing replacement and return, indicating a fulfillment error requiring human intervention.",
+      "notes": "Mentions receiving the wrong item and missing updates on both return and replacement."
+    }
+  },
+  {
+    "id": "golden_090",
+    "customer_text": "sold by a seller. Charles Tyrwhitt",
+    "customer_text_raw": "@AmazonHelp sold by a seller. Charles Tyrwhitt",
+    "historical_brand_reply": "I recommend contacting the seller for an update. We have steps to contact them listed here: [URL] ^RA",
+    "thread_id": "803072__803073",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General question about a third-party seller that does not require private info or escalation.",
+      "notes": "Fragmentary tweet, likely referencing a marketplace seller inquiry."
+    }
+  },
+  {
+    "id": "golden_091",
+    "customer_text": "Te mande mensaje directo para mas detalles",
+    "customer_text_raw": "@AmazonHelp Te mande mensaje directo para mas detalles",
+    "historical_brand_reply": "Te enviaremos una respuesta por MD. Recuerda no compartir información personal o de tu cuenta, por seguridad. ^LG",
+    "thread_id": "2618066__2618064",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": true,
+      "escalation_reason": "Customer is moving the conversation to direct messages, which likely involves sharing private account information or PII.",
+      "notes": "Spanish language tweet indicating a transition to private messaging."
+    }
+  },
+  {
+    "id": "golden_092",
+    "customer_text": "got my prime package today with someones...lunch in it? How about some quality control here - this is disgusting! [URL]",
+    "customer_text_raw": "@115821 got my prime package today with someones...lunch in it? How about some quality control here - this is disgusting! https://t.co/jPQKu9Y9L8",
+    "historical_brand_reply": "Sorry this happened! A member of my team to address this personally. Provide us details: ​[URL] ^BT",
+    "thread_id": "1204982__1204981",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer received a biohazard/food contamination issue with their delivery requiring a formal quality control complaint and potential replacement or compensation.",
+      "notes": "Customer expresses strong frustration and disgust over a packing error."
+    }
+  },
+  {
+    "id": "golden_093",
+    "customer_text": "Non. C'est une édition dédicacée du nouveau livre de John Green en VO, et je l'ai précommandé en juillet.",
+    "customer_text_raw": "@AmazonHelp Non. C'est une édition dédicacée du nouveau livre de John Green en VO, et je l'ai précommandé en juillet.",
+    "historical_brand_reply": "Afin d'avoir une réponse dans l'immédiat, je vous prie de joindre notre SAV par Chat ou téléphone via: [URL]",
+    "thread_id": "1609601__1609603",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Pre-order inquiry that can be resolved by checking order status.",
+      "notes": "Non-English (French). Customer is clarifying that their pre-ordered item is a special edition book."
+    }
+  },
+  {
+    "id": "golden_094",
+    "customer_text": "what's the use of #AmazonPrime in India if these aren't available? [URL]",
+    "customer_text_raw": "@116618 what's the use of #AmazonPrime in India if these aren't available? https://t.co/4DXb2NSt0a",
+    "historical_brand_reply": "The season has got geographical restrictions. Please stay tuned to Prime videos for further updates. ^HA",
+    "thread_id": "1388426__1388425",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": false,
+      "escalation_reason": "General question and expression of dissatisfaction about Prime benefits availability without any abusive language, PII, or specific financial transaction request.",
+      "notes": "Customer is expressing frustration regarding service availability in India; could also lean towards Complaint / Frustration."
+    }
+  },
+  {
+    "id": "golden_095",
+    "customer_text": "why has prime become so unreliable? On order confirmation is next day delivery, dispatch notification says arrives few days after?",
+    "customer_text_raw": "@115830 why has prime become so unreliable? On order confirmation is next day delivery, dispatch notification says arrives few days after?",
+    "historical_brand_reply": "Hi, sorry for the wait! Have you been provided with a reason behind the revised delivery date? ^TS",
+    "thread_id": "919805__919803",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": false,
+      "escalation_reason": "General service complaint about shipping estimates that can be addressed with standard troubleshooting or policy explanation.",
+      "notes": "Customer is frustrated with Prime delivery reliability, mixing subscription service quality with delivery issues."
+    }
+  },
+  {
+    "id": "golden_096",
+    "customer_text": "SMSでAmazonからの詐欺メッセ来たんだけど無視でいいんだよね？ 裁判絡んだら確か挑むんだよね？",
+    "customer_text_raw": "SMSでAmazonからの詐欺メッセ来たんだけど無視でいいんだよね？\n裁判絡んだら確か挑むんだよね？",
+    "historical_brand_reply": "失礼します、Amazon公式です。当サイトの名をかたるフィッシングやなりすましメールをお受け取りの場合は、記載の電話番号に連絡したり、URLにアクセスしたりされませんように…。こちらもご参照ください。[URL] RI",
+    "thread_id": "998110__998108",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "General inquiry about a phishing SMS, does not require account access or financial processing.",
+      "notes": "Japanese language. Customer is asking for advice regarding a suspected phishing message pretending to be Amazon."
+    }
+  },
+  {
+    "id": "golden_097",
+    "customer_text": "nope...please explain me here i want 100% transparency.....i want people know how you block my mobile no. and cod facillity just because i have pointed mistake in your system",
+    "customer_text_raw": "@AmazonHelp nope...please explain me here i want 100% transparency.....i want people know how you block my mobile no. and cod facillity just because i have pointed mistake in your system",
+    "historical_brand_reply": "We wouldn't be able access your account over social platform. As you've received an email from social media team, request you to reply to our correspondence . We'll review it and get back to you. Appreciate your understanding. ^MO",
+    "thread_id": "144009__144010",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is highly frustrated, accusing the company of blocking their account/COD facility unjustly, requiring agent intervention.",
+      "notes": "Customer is refusing public-to-private deflection ('please explain me here') and demanding transparency regarding account restrictions."
+    }
+  },
+  {
+    "id": "golden_098",
+    "customer_text": "care to explain why your app no longer works for no apparent reason?",
+    "customer_text_raw": "@116618 care to explain why your app no longer works for no apparent reason?",
+    "historical_brand_reply": "We're here to help if we can! What device are you using? Also, are you getting any error message? ^TR",
+    "thread_id": "2124825__2124824",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is frustrated about the app not working, but no sensitive data or urgent safety/legal threat is present. Can be handled by standard troubleshooting support."
+    }
+  },
+  {
+    "id": "golden_099",
+    "customer_text": "Der verkäufer gibt zu kein neues Produkt verkauft zu haben. Gibt uns trotzdem die Schuld an der Beschädigung und will sein Geld behalten.",
+    "customer_text_raw": "@AmazonHelp @AmazonHelp Der verkäufer gibt zu kein neues Produkt verkauft zu haben. Gibt uns trotzdem die Schuld an der Beschädigung und will sein Geld behalten.",
+    "historical_brand_reply": "Kannst du die A-z Garantie beantragen? [URL] Gern übernimmt das unser Kundenservice: [URL] ^UK",
+    "thread_id": "2161927__2161930",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Dispute with a seller regarding a damaged/used item and withheld funds requires intervention.",
+      "notes": "German language, expresses frustration over a seller's refusal to refund."
+    }
+  },
+  {
+    "id": "golden_100",
+    "customer_text": "ICH HABE ABER KEINEN REPARATURAUFTRAG IN AUFTRAG GEGEBEN - IHR HAB MEINE DATEN EINFACH SO WEITERGEGEBEN !!!!!",
+    "customer_text_raw": "@AmazonHelp ICH HABE ABER KEINEN REPARATURAUFTRAG IN AUFTRAG GEGEBEN - IHR HAB MEINE DATEN EINFACH SO WEITERGEGEBEN !!!!!",
+    "historical_brand_reply": "Wir sehen uns den Vorgang gerne mal an. Bitte melde dich direkt bei uns im Amazon.de Social Team: [URL] ^BL",
+    "thread_id": "1234705__1234706",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and complaining about unauthorized data sharing and repair orders.",
+      "notes": "Written in all caps German, indicating high frustration and potential privacy/data protection concerns."
+    }
+  },
+  {
+    "id": "golden_101",
+    "customer_text": "just got a reply saying they are escalating the problem with the transport department, another 2 days wait. Funny that the lady on sun was escalating or so were the 2 men I spoke to wednesday and friday. Yet still you advertise and sell Xbox as PRIME.",
+    "customer_text_raw": "@115821 just got a reply saying they are escalating the problem with the transport department, another 2 days wait. Funny that the lady on sun was escalating or so were the 2 men I spoke to wednesday and friday. Yet still you advertise and sell Xbox as PRIME.",
+    "historical_brand_reply": "Did we advise that we will contact you once we have an update ? ^TD",
+    "thread_id": "1125008__1125007",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing a recurring, unresolved delivery issue and is expressing ongoing frustration across multiple contacts.",
+      "notes": "Mentions multiple failed escalations over several days and a misleading Prime advertisement for an Xbox."
+    }
+  },
+  {
+    "id": "golden_102",
+    "customer_text": "driver didn't ring the bell called customer service and member of staff name Diviya was so rude. unhelpful and seems frustrated",
+    "customer_text_raw": "@115830  driver didn't ring the bell called customer service and member of staff name Diviya was so rude. unhelpful and seems frustrated",
+    "historical_brand_reply": "I'm sorry for the poor experience! We'd like to make sure this is looked into. Please provide details: [URL] ^WJ",
+    "thread_id": "286254__286252",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting poor staff behavior and unprofessional service from a named representative.",
+      "notes": "Combines a delivery issue (driver didn't ring bell) with a formal employee complaint."
+    }
+  },
+  {
+    "id": "golden_103",
+    "customer_text": "I’m being charged for kindle unlimited even though my amazon account says I don’t have a subscription. How do I get a refund?",
+    "customer_text_raw": "@115821 I’m being charged for kindle unlimited even though my amazon account says I don’t have a subscription. How do I get a refund?",
+    "historical_brand_reply": "Hi Clare, please contact us here so we can look into it further: [URL] ^AT",
+    "thread_id": "1324544__1324543",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting a refund and has a billing discrepancy involving a subscription.",
+      "notes": "Mentions both a subscription issue and a request for a refund."
+    }
+  },
+  {
+    "id": "golden_104",
+    "customer_text": "why have you changed couriers from DPD to Hermes?, None of my Amazon prime next day delivery purchases have shown up on time recently because of their atrocious reliability.",
+    "customer_text_raw": "@AmazonHelp why have you changed couriers from DPD to Hermes?, None of my Amazon prime next day delivery purchases have shown up on time recently because of their atrocious reliability.",
+    "historical_brand_reply": "Without posting account information, are you currently having trouble with an order? Have you contacted the courier? ^LI",
+    "thread_id": "2115548__2115546",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing frustration about courier reliability and delivery delays, but is asking a general process question rather than requesting a specific refund or involving sensitive private account data.",
+      "notes": "Expresses strong dissatisfaction with the courier change but remains a general service query."
+    }
+  },
+  {
+    "id": "golden_105",
+    "customer_text": "So you failed to deliver a Prime order on the promised day and I cancelled. When do I get the monies refunded?",
+    "customer_text_raw": "@AmazonHelp So you failed to deliver a Prime order on the promised day and I cancelled.  When do I get the monies refunded?",
+    "historical_brand_reply": "Sorry to hear this. Have you contacted us directly? If not, you can do so here: [URL] ^PK",
+    "thread_id": "1007572__1007571",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is asking about a monetary refund following a failed delivery and cancellation.",
+      "notes": "Mentions Prime order and delivery failure, but primary actionable intent is the refund."
+    }
+  },
+  {
+    "id": "golden_106",
+    "customer_text": "Why don't you use UPI for payments in amazon.in ? Safe and no \"resend OTP\" BS.",
+    "customer_text_raw": "@115850 @AmazonHelp Why don't you use UPI for payments in amazon.in ? Safe and no \"resend OTP\" BS.",
+    "historical_brand_reply": "I shall forward the feedback to the concerned team and get it reviewed. Thank you for the suggestion.^HR",
+    "thread_id": "1659681__1659680",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General feature inquiry about payment methods, does not require human agent escalation.",
+      "notes": "Customer is expressing a preference for UPI and asking a rhetorical/functional question about payment options on Amazon.in."
+    }
+  },
+  {
+    "id": "golden_107",
+    "customer_text": "just had to make a complaint regarding wrong item sent to me. Have to say your customer service is fantastic!!",
+    "customer_text_raw": "@AmazonHelp just had to make a complaint regarding wrong item sent to me. Have to say your customer service is fantastic!!",
+    "historical_brand_reply": "Sorry about the mix up, but glad to hear everything went smoothly! If you need anything else don't hesitate to ask! ^LS",
+    "thread_id": "2422658__2422657",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer received the wrong item and needs a replacement or resolution.",
+      "notes": "Mixed sentiment: customer is complaining about a wrong item, but praising the customer service."
+    }
+  },
+  {
+    "id": "golden_108",
+    "customer_text": "Bye amazon.. enough explained you and your team.. No more now.. if you wanted you would have approched me.. Not like this.. it's harresment.. I told earlier too dats this account is without email address.. and your form demands it.. nd all.. Keep rs 15..you lost a custmer",
+    "customer_text_raw": "@AmazonHelp Bye amazon.. enough explained you and your team.. \nNo more now.. if you wanted you would have approched me..\n\nNot like this.. it's harresment.. I told earlier too dats this account is without email address.. and your form demands it.. nd all.. \n\nKeep rs 15..you lost a custmer",
+    "historical_brand_reply": "I understand you being disappointed, apologies for the inconvenience. We certainly want to help you. Please add an email ID to your account and share the details from the secured link. We will take corrective actions. Appreciate your cooperation. ^BS",
+    "thread_id": "2485638__2485639",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing severe frustration, accusing the company of harassment, and stating they are leaving; requires careful handling to retain the customer and address account access issues.",
+      "notes": "Customer mentions account access issue (no email address) but the primary tone and driver is high frustration and churn threat."
+    }
+  },
+  {
+    "id": "golden_109",
+    "customer_text": "So sad @AmazonHelp @115830 ruined his FIRST Halloween by failing to deliver his tiny costume 2 days running #whypayprime? #amazon #prime",
+    "customer_text_raw": "So sad @AmazonHelp @115830 ruined his FIRST Halloween by failing to deliver his tiny costume 2 days running #whypayprime? #amazon #prime",
+    "historical_brand_reply": "Oh no! Did we miss the expected delivery date from your confirmation e-mail here: [URL] Please let us know. ^KL",
+    "thread_id": "4788__4787",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing strong frustration about a failed time-sensitive delivery (Halloween costume) and mentions Prime subscription value.",
+      "notes": "Mentions Prime/subscription indirectly, primary issue is delivery failure causing frustration."
+    }
+  },
+  {
+    "id": "golden_110",
+    "customer_text": "where's my parcel? My order Was due to be delivered by 9pm Was apparently 'handed to resident' at 11.25pm? No it wasn't!? Where is it?",
+    "customer_text_raw": "@AmazonHelp where's my parcel? My order Was due to be delivered by 9pm Was apparently 'handed to resident' at 11.25pm? No it wasn't!? Where is it?",
+    "historical_brand_reply": "I'm sorry to hear you don't have your parcel! We can help with this! For tips on locating parcels that have been delivered, visit us here: [URL] ^TK",
+    "thread_id": "2273485__2273484",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Missing package marked as delivered requires carrier investigation or support intervention.",
+      "notes": "Customer is frustrated about a disputed delivery status."
+    }
+  },
+  {
+    "id": "golden_111",
+    "customer_text": "Okay thanks, let me go ahead and delete this post for now. Thanks for the quick reply",
+    "customer_text_raw": "@AmazonHelp Okay thanks, let me go ahead and delete this post for now. Thanks for the quick reply",
+    "historical_brand_reply": "You're welcome. Do keep us posted for any further concerns. ^SG",
+    "thread_id": "868667__868666",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing thanks and intends to delete the post; no issue requiring intervention.",
+      "notes": "Resolution/closure tweet from customer."
+    }
+  },
+  {
+    "id": "golden_112",
+    "customer_text": "I don’t not see one.",
+    "customer_text_raw": "@AmazonHelp I don’t not see one.",
+    "historical_brand_reply": "Thanks for checking. Do you know who the carrier for your order was? Was tracking provided or? ^NV",
+    "thread_id": "353276__353277",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "The message is too ambiguous and lacks context, but does not meet the criteria for urgent escalation.",
+      "notes": "Extremely brief, missing context about what is missing."
+    }
+  },
+  {
+    "id": "golden_113",
+    "customer_text": "Thany you :-) I will contact them.",
+    "customer_text_raw": "@AmazonHelp Thany you :-) I will contact them.",
+    "historical_brand_reply": "At your service. ^SB",
+    "thread_id": "1379487__1379489",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Simple expression of gratitude, no further action required.",
+      "notes": "Customer is saying thank you and ending the interaction."
+    }
+  },
+  {
+    "id": "golden_114",
+    "customer_text": "Dice que según llega hoy, pero aún no lo recibo y solo quedan 15min para la hora final de entrega de FedEx [URL]",
+    "customer_text_raw": "@AmazonHelp Dice que según llega hoy, pero aún no lo recibo y solo quedan 15min para la hora final de entrega de FedEx https://t.co/MqmlOxMfVo",
+    "historical_brand_reply": "¿Has logrado contactar a FedEx para obtener más información? ^JQ",
+    "thread_id": "215075__215074",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "None",
+      "notes": "Non-English tweet (Spanish) regarding a delayed or tight delivery window."
+    }
+  },
+  {
+    "id": "golden_115",
+    "customer_text": "I didn't think leave it out of the building for anyone to take was an option",
+    "customer_text_raw": "@AmazonHelp I didn't think leave it out of the building for anyone to take was an option",
+    "historical_brand_reply": "I'm sorry for the poor experience. Has a safe place been set up: [URL] Was carrier feedback relayed? ^KL",
+    "thread_id": "2605685__2605686",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing frustration over improper package placement leading to a potential theft/loss issue.",
+      "notes": "Sarcastic tone indicating high customer frustration."
+    }
+  },
+  {
+    "id": "golden_116",
+    "customer_text": "Amazon, you surprise me. How you can dispatch an item when you yourself canceled this item and promised to refund my money. Do you have any system or running a shop.",
+    "customer_text_raw": "@AmazonHelp Amazon, you surprise me. How you can dispatch an item when you yourself canceled this item and promised to refund my money. Do you have any system or running a shop.",
+    "historical_brand_reply": "I apologize for the trouble with your order, Mahesh. Please share your insight by writing back to the e-mail ^MP (1/2)",
+    "thread_id": "438816__438817",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is dealing with a confused order state (dispatched despite cancellation) and inquiring about a promised refund.",
+      "notes": "Customer expresses frustration regarding system error with cancellation and refund."
+    }
+  },
+  {
+    "id": "golden_117",
+    "customer_text": "Habe eine neue Mitarbeiterin..@6416 danke dafür @116316 #AmazonAlexa [URL]",
+    "customer_text_raw": "Habe eine neue Mitarbeiterin..@6416 danke dafür @116316  #AmazonAlexa https://t.co/teghOFk3vv",
+    "historical_brand_reply": "Herzlichen Glückwunsch und viel Spaß beim Kennenlernen! Sie ist wirklich eine pflegeleichte Lady und spricht nur wenn sie gefragt wird 😄 ^BL",
+    "thread_id": "109863__109862",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "German tweet expressing thanks/praise for a new Echo device or Alexa feature, mentioning multiple handles."
+    }
+  },
+  {
+    "id": "golden_118",
+    "customer_text": "Or, Le chat qui fume précise vous avoir envoyé les exemplaires le 27 octobre dernier. :/",
+    "customer_text_raw": "@AmazonHelp Or, Le chat qui fume précise vous avoir envoyé les exemplaires le 27 octobre dernier. :/",
+    "historical_brand_reply": "Je vous prie de contacter notre SAV à ce propos via ce lien [URL] ^SN",
+    "thread_id": "1454503__1454506",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Informational update about shipping date, no immediate sensitive action or high frustration requiring escalation yet.",
+      "notes": "Written in French. Mentions a specific date (October 27th) for shipment from a third party (Le chat qui fume)."
+    }
+  },
+  {
+    "id": "golden_119",
+    "customer_text": "u r literally THE WORST! I’ve called 2x about my broken fire stick, been disconnected 2x while being transferred multiple times",
+    "customer_text_raw": "@AmazonHelp u r literally THE WORST! I’ve called 2x about my broken fire stick, been disconnected 2x while being transferred multiple times",
+    "historical_brand_reply": "I'm sorry for the frustration! Our team would like to take a closer look at this for you here: [URL] ^AD",
+    "thread_id": "1841518__1841517",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and experiencing a frustrating multi-step technical issue involving repeated disconnections.",
+      "notes": "Mentions previous failed support contacts by phone (broken fire stick)."
+    }
+  },
+  {
+    "id": "golden_120",
+    "customer_text": "Why is @115821 texting me offers? No. Stop. Keep it to emails or don't share #s, if it's a partner sending in your name.",
+    "customer_text_raw": "Why is @115821 texting me offers?\nNo.\nStop.\nKeep it to emails or don't share #s, if it's a partner sending in your name.",
+    "historical_brand_reply": "Oh no! Are you able to change your communication preferences here: [URL] Please keep us updated! ^NM",
+    "thread_id": "297904__297902",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing privacy concerns and asking to stop unwanted text messages related to partner offers.",
+      "notes": "Customer is frustrated about receiving unwanted text messages."
+    }
+  },
+  {
+    "id": "golden_121",
+    "customer_text": "I ordered a iPhone 6s but I recieved soaps in that package when I contacted Amazon they told me to wait n wasted my time n lastly they denied for replacement or refund and told me to take legal actions. My money has been stuck by Amazon this is not acceptable by amazon",
+    "customer_text_raw": "@115850 \nI ordered a iPhone 6s but I recieved soaps in that package when I contacted Amazon they told me to wait n wasted my time n lastly they denied for replacement or refund and told me to take legal actions. My money has been stuck by Amazon this is not acceptable by amazon",
+    "historical_brand_reply": "We apologize for any inconvenience regarding your order. We'd like to take a closer look at this. Kindly drop your details here: [URL] and we'll get in touch with you soon. ^BV",
+    "thread_id": "535073__535071",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting a severe fraudulent delivery (received soaps instead of iPhone), money stuck, denial of refund, and mentions taking legal actions.",
+      "notes": "Multi-intent/Severe complaint involving potential theft/fraud and legal threats."
+    }
+  },
+  {
+    "id": "golden_122",
+    "customer_text": "問い合わせしたいんだけど、Amazonへの接続に問題が生じてるんだが('ω' )三('ω')三( 'ω')",
+    "customer_text_raw": "問い合わせしたいんだけど、Amazonへの接続に問題が生じてるんだが('ω' )三('ω')三( 'ω')",
+    "historical_brand_reply": "突然失礼いたします、公式サポートです。Amazonへの接続に問題が生じているとのことですが、どのような問題でしょうか？差し支えなければ、問題の詳細やご利用環境などお知らせください。TN",
+    "thread_id": "1668367__1668365",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Japanese tweet reporting connection issues to Amazon, likely a general outage or simple technical question."
+    }
+  },
+  {
+    "id": "golden_123",
+    "customer_text": "já falei que te amo hj ? <3 [URL]",
+    "customer_text_raw": "@117086  já falei que te amo hj ? &lt;3 https://t.co/BgHP3Poyc8",
+    "historical_brand_reply": "😱Denis, você gostou do presente? ^HC [URL]",
+    "thread_id": "410064__410063",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing praise and affection without any service issue or request.",
+      "notes": "Non-English (Portuguese); expression of appreciation/praise."
+    }
+  },
+  {
+    "id": "golden_124",
+    "customer_text": "team I need the invoice of order from Amazon. Not able to find any request link in your app hence I am here",
+    "customer_text_raw": "@115850 team I need the invoice of order from Amazon. Not able to find any request link in your app hence I am here",
+    "historical_brand_reply": "I understand your concern, please contact us here: [URL] and we'll assist you accordingly. ^SU",
+    "thread_id": "671590__671591",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Customer is asking for an invoice which can be provided via standard troubleshooting or instructions without needing account verification beyond public info.",
+      "notes": "Customer is trying to find the invoice download link in the app."
+    }
+  },
+  {
+    "id": "golden_125",
+    "customer_text": "can't change my seller bank ac info. Can't download money & U have sent money to wrong ac. Getting 0 help. What can I do. URGENT [URL]",
+    "customer_text_raw": "@115830 can't change my seller bank ac info. Can't download money &amp; U have sent money to wrong ac.  Getting 0 help. What can I do. URGENT https://t.co/XQAe2zlUVa",
+    "historical_brand_reply": "Hi Amanda. I'm sorry to hear that. Have you contacted through seller support already? ^DC",
+    "thread_id": "1604097__1604092",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Involves sensitive financial account information, money sent to the wrong account, and extreme customer frustration.",
+      "notes": "Multi-intent involving payment/financial issues and account update problems, combined with urgency and high frustration."
+    }
+  },
+  {
+    "id": "golden_126",
+    "customer_text": "I’ve got a HUGE issue. I placed an order and used a gift card balance to pay for it but my credit card was just charged. Why?!",
+    "customer_text_raw": "@AmazonHelp I’ve got a HUGE issue. I placed an order and used a gift card balance to pay for it but my credit card was just charged. Why?!",
+    "historical_brand_reply": "I'm sorry your card was charged. Was the total amount taken from the credit card in Your Orders here: [URL] ^SJ",
+    "thread_id": "863813__863812",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Involves billing dispute, payment discrepancy, and potential sensitive financial information.",
+      "notes": "Customer is frustrated about unexpected charges despite using a gift card."
+    }
+  },
+  {
+    "id": "golden_127",
+    "customer_text": "Like I Said, the normal customer service team are incapable of sorting it out and keep making the situation worse.",
+    "customer_text_raw": "@AmazonHelp Like I Said, the normal customer service team are incapable of sorting it out and keep making the situation worse.",
+    "historical_brand_reply": "I've confirmed your information has been received & is being reviewed upon your submission of your information yesterday to our team. Once a resolution has been met our team will reach out to you ASAP. Thanks for your patience whiles being reviewed. ^TM",
+    "thread_id": "2230329__2230331",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated and expresses dissatisfaction with prior support attempts.",
+      "notes": "Indicates previous support failures; requires higher-level intervention."
+    }
+  },
+  {
+    "id": "golden_128",
+    "customer_text": "Not impressed, up at 6.30am and the Switch deal with Mario is out of stock despite showing as In Stock. While i'm on the subject a Kids console deal aimed at families deal released at midnight when most families will be in bed so the gougers get most of the stock....",
+    "customer_text_raw": "@115830  Not impressed, up at 6.30am and the Switch deal  with Mario is out of stock despite showing as In Stock.  While i'm on the subject a Kids console deal aimed at families deal released at midnight when most families will be in bed so the gougers get most of the stock....",
+    "historical_brand_reply": "Hi James, which particular Switch deal are you looking it?^PJ",
+    "thread_id": "131682__131680",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration regarding stock availability and unfair release times, which requires careful handling and potentially stock checking.",
+      "notes": "Mentions two pain points: stock discrepancy (shows in stock, but is out) and unfair release timing favoring scalpers."
+    }
+  },
+  {
+    "id": "golden_129",
+    "customer_text": "why do I only have an issue receiving packages when it’s @115821 Delivery? Wtf am I paying $100 a year for? Explain. I’ll wait...",
+    "customer_text_raw": "@115851 why do I only have an issue receiving packages when it’s @115821 Delivery? Wtf am I paying $100 a year for? Explain. I’ll wait...",
+    "historical_brand_reply": "I'm very sorry for this issue with your orders. Who's the carrier you're experiencing this issue with? ^DO",
+    "thread_id": "412322__412319",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing frustration about delivery issues related to their paid subscription (Prime) and demanding an explanation.",
+      "notes": "Mentions paying $100 a year, indicating Amazon Prime. Contains profanity ('Wtf')."
+    }
+  },
+  {
+    "id": "golden_130",
+    "customer_text": "my Alexa isn't responding to the command. I even pressed the botton and nothing happens",
+    "customer_text_raw": "@AmazonHelp my Alexa isn't responding to the command. I even pressed the botton and nothing happens",
+    "historical_brand_reply": "Oh no! Which type of Alexa device is it? Have you already tried restarting this device? ^BE",
+    "thread_id": "2498494__2498492",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Troubleshooting query for an Alexa device, can be answered with standard support steps."
+    }
+  },
+  {
+    "id": "golden_131",
+    "customer_text": "Dear @115830 I think your recommendations is broken? I listen to Foo, Fall out Boy and Blink182. Not sure why you are giving me this? [URL]",
+    "customer_text_raw": "Dear @115830 I think your recommendations is broken? I listen to Foo, Fall out Boy and Blink182. Not sure why you are giving me this? https://t.co/sEjax4PzDk",
+    "historical_brand_reply": "That is strange. Are you sure you aren't a Little Mix fan? ^KM",
+    "thread_id": "1258566__1258564",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple query regarding algorithm/recommendations that does not require account intervention or escalation.",
+      "notes": "Customer is confused about music recommendations based on their stated tastes."
+    }
+  },
+  {
+    "id": "golden_132",
+    "customer_text": "Pues estoy revisando el correo y no, yo quiero saber si el pedido me llegara o no",
+    "customer_text_raw": "@AmazonHelp Pues estoy revisando el correo y no, yo quiero saber si el pedido me llegara o no",
+    "historical_brand_reply": "Dani, el pedido ¿fue vendido y gestionado por Amazon o fue vendido por un vendedor externo? ^DA",
+    "thread_id": "40399__40401",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Simple inquiry about order delivery status.",
+      "notes": "Spanish language; customer is frustrated that email info wasn't clear."
+    }
+  },
+  {
+    "id": "golden_133",
+    "customer_text": "how much your account specialist team need to see details i have sent through fax on 4 th november. when will they respond me and when will they unhold my amazon account. rs 8499 left in my amazon pay. adding money to amazon pay is my life biggest mistake.",
+    "customer_text_raw": "@115850 how much your account specialist team need to see details i have sent through fax on 4 th november. when will they respond me and when will they unhold my amazon account. rs 8499 left in my amazon pay. adding money to amazon pay is my life biggest mistake.",
+    "historical_brand_reply": "I get your concern, Krishna. However, as this is account related issue, our account specialist team would be the best ones to assist. Please check and reply to the same for assistance. Appreciate your understanding in this regard. ^HS",
+    "thread_id": "2389744__2419102",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer's account is on hold with funds locked, requiring sensitive account intervention and verification.",
+      "notes": "Customer is extremely frustrated and mentions financial loss/held balance in Amazon Pay."
+    }
+  },
+  {
+    "id": "golden_134",
+    "customer_text": "Why should I pay 50 bucks each time your delivery executives come to pick up defective products you shipped? 1/2",
+    "customer_text_raw": "@115850 Why should I pay 50 bucks each time your delivery executives come to pick up defective products you shipped? 1/2",
+    "historical_brand_reply": "We do not encourage that, sorry to know. Please report this here: [URL] and we'll escalate this. ^HT",
+    "thread_id": "227428__227427",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about unexpected fees for returning defective items and is likely seeking a fee waiver or refund.",
+      "notes": "First part of a multi-part tweet (indicated by '1/2'), expressing frustration about return costs."
+    }
+  },
+  {
+    "id": "golden_135",
+    "customer_text": "Cher livreur @120533, c'est bien gentil à toi d'avoir laissé mon filtre adoucisseur pour la douche (vous saurez tout) à un voisin en mon absence. Mais ça te tuerait de préciser le nom du voisin ?!!! Pas d'avis de passage, rien, à peine une info incomplète sur le net.",
+    "customer_text_raw": "Cher livreur @120533, c'est bien gentil à toi d'avoir laissé mon filtre adoucisseur pour la douche (vous saurez tout) à un voisin en mon absence. Mais ça te tuerait de préciser le nom du voisin ?!!! Pas d'avis de passage, rien, à peine une info incomplète sur le net.",
+    "historical_brand_reply": "Bonjour, je suis désolé pour cela. Je vous propose de contacter notre SAV : [URL] afin de contacter le transporteur et avoir plus d'informaitons concernant votre livraison.",
+    "thread_id": "2406985__2406984",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is frustrated about an incomplete delivery notification and missing neighbor name, but it is a standard delivery issue that does not strictly require human agent escalation for sensitive data, legal threats, or refunds. Written in French."
+    }
+  },
+  {
+    "id": "golden_136",
+    "customer_text": "Yes. Between that chat feature and phone, I dealt with 4 representatives. Only the last one had any clue How to help. Really awful customer service.",
+    "customer_text_raw": "@AmazonHelp Yes. Between that chat feature and phone, I dealt with 4 representatives. Only the last one had any clue How to help. Really awful customer service.",
+    "historical_brand_reply": "We want to make sure your order arrives. If there is no sign of it by tomorrow, please let us know. You can view the tracking details here: [URL] ^BZ",
+    "thread_id": "671771__671770",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing severe frustration and complaining about exceptionally poor service across multiple representatives.",
+      "notes": "No explicit refund requested, but high dissatisfaction warrants escalation to service quality team."
+    }
+  },
+  {
+    "id": "golden_137",
+    "customer_text": "返信ありがとうございます Amazon様には申し訳ありませんが未だにAmazon様を利用したことが無くて… さすがに「ん？」と思いました 改めて返信ありがとうございました 機会がありましたらAmazon様に登録して利用させて頂きたく思います",
+    "customer_text_raw": "@AmazonHelp 返信ありがとうございます\nAmazon様には申し訳ありませんが未だにAmazon様を利用したことが無くて…\nさすがに「ん？」と思いました\n\n改めて返信ありがとうございました\n機会がありましたらAmazon様に登録して利用させて頂きたく思います",
+    "historical_brand_reply": "とんでもないことでございます。Amazonを騙るEメールやSMSが増えているようですので、今後も引き続きご注意ください。 機会がございましたら、ぜひご利用くださいませ。TN",
+    "thread_id": "2808945__2808944",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "The customer is polite, has not actually used the service, and is not reporting an actionable issue requiring escalation.",
+      "notes": "Non-English (Japanese). The user mentions receiving a message from Amazon despite never having used the service, suggesting a potential wrong-number or misdirected communication, but expresses no anger or urgent need for support."
+    }
+  },
+  {
+    "id": "golden_138",
+    "customer_text": "These are not options for me, unfortunately. Would you like me to say it a third time? Sure. These aren't options for me, unfortunately. Can you get somebody with knowledge to reply to my email instead? That's an option for me. Thanks.",
+    "customer_text_raw": "@AmazonHelp These are not options for me, unfortunately. Would you like me to say it a third time? Sure. These aren't options for me, unfortunately. Can you get somebody with knowledge to reply to my email instead? That's an option for me. Thanks.",
+    "historical_brand_reply": "Our team is unable to access your account or orders here on Twitter, but we're happy to have this issue reviewed for you. When you have a moment, please send our team your info directly using this link: [URL] ^DO",
+    "thread_id": "2854281__2854282",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated, repeating themselves, and explicitly asking for human/expert intervention to resolve their issue.",
+      "notes": "Sarcastic tone, multi-turn frustration implied."
+    }
+  },
+  {
+    "id": "golden_139",
+    "customer_text": "Why you don’t request a signature on an expensive purchase is beyond me. Clearly driver has stolen it. So annoying.",
+    "customer_text_raw": "@AmazonHelp Why you don’t request a signature on an expensive purchase is beyond me. Clearly driver has stolen it. So annoying.",
+    "historical_brand_reply": "Please try these tips for locating a missing parcel: [URL] Also, have you set your unattended delivery preferences: [URL] ^AN",
+    "thread_id": "639567__639565",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is accusing the driver of theft and expressing high frustration over a missing expensive purchase.",
+      "notes": "Includes strong frustration and an accusation of theft regarding a delivery."
+    }
+  },
+  {
+    "id": "golden_140",
+    "customer_text": "Dec 4th. Please explain why I pay for prime if you don't deliver in 2 days? My previous order was expedited for $3.99 and that took 3 days.",
+    "customer_text_raw": "@AmazonHelp Dec 4th.  Please explain why I pay for prime if you don't deliver in 2 days? My previous order was expedited for $3.99 and that took 3 days.",
+    "historical_brand_reply": "Prime shipping is from the date the order is dispatched not from the date the order was placed. Several factors such as location and item availability also are contributing factors. For more info see here: [URL] ^BA",
+    "thread_id": "520641__520643",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about a paid subscription benefit (Prime shipping guarantee) failing and paid shipping delays.",
+      "notes": "Includes frustration regarding missed delivery windows for both Prime and paid expedited shipping."
+    }
+  },
+  {
+    "id": "golden_141",
+    "customer_text": "Amazon Refund my Curior charge for a 1KG item 100.let me know which Curior brought 1Kg item in 100rs?.",
+    "customer_text_raw": "@AmazonHelp Amazon Refund my Curior charge for a 1KG item 100.let me know which Curior brought 1Kg item in 100rs?.",
+    "historical_brand_reply": "I get your concern, Morphine. Could you please confirm, if you've reached us from the link shared? ^SV",
+    "thread_id": "1007014__1007016",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is requesting a refund for a courier charge.",
+      "notes": "Mentions a specific monetary amount (100rs) and questions courier pricing; contains slight grammatical ambiguity."
+    }
+  },
+  {
+    "id": "golden_142",
+    "customer_text": "C’est ce que je pensais, on veut un jeu dans les tps mais quand la livraison est prise en charge par @120535 @120534 Bah nan on l’aura pas le bon jour ... 🙄😑 [URL]",
+    "customer_text_raw": "@120533 C’est ce que je pensais, on veut un jeu dans les tps mais quand la livraison est prise en charge par @120535 @120534  Bah nan on l’aura pas le bon jour ... 🙄😑 https://t.co/F7eB2I6iev",
+    "historical_brand_reply": "Bonsoir, Je suis désolé pour ce retard :\\ N'hésitez pas à signaler l'incident à notre SAV afin d'éviter que cela se reproduise. Merci pour votre patience et compréhension. ^MH",
+    "thread_id": "2205101__2205100",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "General complaint about a delivery delay without request for sensitive data or immediate financial intervention.",
+      "notes": "French language tweet expressing frustration about a delayed delivery."
+    }
+  },
+  {
+    "id": "golden_143",
+    "customer_text": "I mean, I was sitting here when this false alert was sent. Like how you gonna tell me you delivered something & you have not?",
+    "customer_text_raw": "@AmazonHelp I mean, I was sitting here when this false alert was sent. Like how you gonna tell me you delivered something &amp; you have not?",
+    "historical_brand_reply": "Who is the carrier listed for this package here: [URL] ? ^LB",
+    "thread_id": "1576291__1576290",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting a false delivery alert, which requires investigating a missing package and specific order details.",
+      "notes": "Customer is frustrated about a delivery status mismatch."
+    }
+  },
+  {
+    "id": "golden_144",
+    "customer_text": "outraged at Amazon taking £189 out of my account because a seller told them my order had been despatched, and they knew full well the goods weren't even in stock. Do your checks in future, I'm out of pocket and a child may not get her Christmas present 😠",
+    "customer_text_raw": "@115830 outraged at Amazon taking £189 out of my account because a seller told them my order had been despatched, and they knew full well the goods weren't even in stock. Do your checks in future, I'm out of pocket and a child may not get her Christmas present 😠",
+    "historical_brand_reply": "We'd like to try to help. Did you contact the seller: [URL] for insight on your order? If so, what insight did they provide? ^CO",
+    "thread_id": "451897__451894",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry, experiencing financial loss due to an unauthorized/premature charge, and sharing sensitive contextual distress involving a Christmas present.",
+      "notes": "Mentions unauthorized charge of £189, out-of-stock items, and involves strong emotional language/anger."
+    }
+  },
+  {
+    "id": "golden_145",
+    "customer_text": "ORDER # 406-2179065-2661962 was supposed to be delivered between 17-22nd Nov. Still waiting for delivery of my package and no reply from seller as well. @AmazonHelp",
+    "customer_text_raw": "@115850 ORDER # 406-2179065-2661962 was supposed to be delivered between 17-22nd Nov. Still waiting for delivery of my package and no reply from seller as well. @AmazonHelp",
+    "historical_brand_reply": "Please don’t provide your order details as we consider them to be personal information. Our page is visible to the public. 2/2^SC",
+    "thread_id": "127437__127436",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting a delayed package past the promised delivery window and mentions seller unresponsiveness, requiring intervention.",
+      "notes": "Order ID is included in the tweet."
+    }
+  },
+  {
+    "id": "golden_146",
+    "customer_text": "Like why does this even happen. If the deliverer doesn't make it obvious he's delivering my item at an earlly time, why should I wait more?",
+    "customer_text_raw": "@115821 Like why does this even happen. If the deliverer doesn't make it obvious he's delivering my item at an earlly time, why should I wait more?",
+    "historical_brand_reply": "I'm sorry for the delivery trouble. Have you already contacted us about this? If so, did we reschedule delivery for tomorrow? ^RA",
+    "thread_id": "1897687__1897686",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about a delivery timing issue and may need intervention or tracking assistance.",
+      "notes": "Customer expresses frustration regarding delivery procedures."
+    }
+  },
+  {
+    "id": "golden_147",
+    "customer_text": "I've contacted the seller with no response, not happy at all with this, when you contact them it says to slow 48 hours for a reply, that's no use on an order cancellation that they dispatched within 4 hours of ordering.",
+    "customer_text_raw": "@AmazonHelp I've contacted the seller with no response, not happy at all with this, when you contact them it says to slow 48 hours for a reply, that's no use on an order cancellation that they dispatched within 4 hours of ordering.",
+    "historical_brand_reply": "I'm sorry to hear the seller has not been able to make this right for you! We're happy to investigate further. In order to do so, please file an A-to-z Guarantee Claim here: [URL] Let us know if you any other questions or concerns.^CS",
+    "thread_id": "2604940__2604941",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about a delayed seller response regarding an order cancellation, requiring intervention.",
+      "notes": "Customer is unhappy with marketplace seller communication and fast dispatch times preventing cancellation."
+    }
+  },
+  {
+    "id": "golden_148",
+    "customer_text": "First attempt at ordering an @115821 package to an Amazon Pickup Point and they are 3 days late on delivery. Why bother paying for prime?",
+    "customer_text_raw": "First attempt at ordering an @115821 package to an Amazon Pickup Point and they are 3 days late on delivery. Why bother paying for prime?",
+    "historical_brand_reply": "Hi, sorry to hear there's been a delay. What's your parcel status: [URL] ^TS",
+    "thread_id": "35156__35154",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about a late delivery on a Prime order and expressing frustration regarding subscription value.",
+      "notes": "Mentions Prime subscription value and expresses dissatisfaction with delivery times."
+    }
+  },
+  {
+    "id": "golden_149",
+    "customer_text": "Si",
+    "customer_text_raw": "@AmazonHelp Si",
+    "historical_brand_reply": "Hiram, en este caso, debes recordar que los contenidos de Prime Video están determinados según la región en la que te encuentres. Si tu cuenta de Prime Video no fue hecha con Amazon Mx, el contenido será diferente. ^ES",
+    "thread_id": "947228__947229",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Single ambiguous word, no clear support request or sensitive information provided.",
+      "notes": "Non-English (Spanish for 'Yes'), extremely ambiguous without context."
+    }
+  },
+  {
+    "id": "golden_150",
+    "customer_text": ".@115821 I'm getting this outputted when trying to change my delivery address. When going back the address is changed, but would prefer it without the error in the step in between ;) [URL]",
+    "customer_text_raw": ".@115821 I'm getting this outputted when trying to change my delivery address. When going back the address is changed, but would prefer it without the error in the step in between ;) https://t.co/U0jfflSnSG",
+    "historical_brand_reply": "Please press \"refresh\" and then it should be fine again. Thanks for your feedback. ^BL",
+    "thread_id": "2960035__2960033",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Low severity software glitch with workaround; no PII, refund, or high frustration.",
+      "notes": "Customer points out a minor UI/error message bug during address change, but notes the change actually saves successfully."
+    }
+  },
+  {
+    "id": "golden_151",
+    "customer_text": "To start this week orders 113-0295326-8478617 and 114-5428843-6957832",
+    "customer_text_raw": "@AmazonHelp To start this week orders 113-0295326-8478617 and \n114-5428843-6957832",
+    "historical_brand_reply": "Have we missed the delivery date given in your order confirmation e-mails: [URL] Please let us know! ^KJ",
+    "thread_id": "551964__551963",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Customer is providing order numbers to check status, which can be handled automatically or by frontline support without special escalation criteria met.",
+      "notes": "Customer provided two order IDs (113-0295326-8478617 and 114-5428843-6957832) to start the week's orders."
+    }
+  },
+  {
+    "id": "golden_152",
+    "customer_text": "why can’t i get into my amazon account? It says my password is incorrect and i know it’s correct i changed it 3 times now",
+    "customer_text_raw": "@AmazonHelp why can’t i get into my amazon account? It says my password is incorrect and i know it’s correct i changed it 3 times now",
+    "historical_brand_reply": "Please reach out to an Account Specialist. They can be reached by phone: 888-282-2406 or e-mail: [URL] ^AF",
+    "thread_id": "1159345__1159344",
+    "heuristic_intent": "Account / Login Issue",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Requires account troubleshooting and verification for login issues.",
+      "notes": "Customer is frustrated that password resets are not working."
+    }
+  },
+  {
+    "id": "golden_153",
+    "customer_text": "how about it not take 30 mins phone call to track my 7th lost parcel and u actually deliver to my house like u deliver to my neighbours?",
+    "customer_text_raw": "@115830 how about it not take 30 mins phone call to track my 7th lost parcel and u actually deliver to my house like u deliver to my neighbours?",
+    "historical_brand_reply": "Hey Robert, thanks for reaching out to us via Twitter! I'm so sorry for the poor experience you've had with us recently. Were we able to provide a resolution when you contacted us? ^AR",
+    "thread_id": "2909191__2909192",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated, reporting multiple lost parcels (7th lost parcel), and expressing significant dissatisfaction with the delivery service and phone support.",
+      "notes": "Tone is very angry and sarcastic. Multi-intent elements present (delivery problem combined with complaint about customer service)."
+    }
+  },
+  {
+    "id": "golden_154",
+    "customer_text": "Hey @AmazonHelp why my @115821 account is locked? I cannot access it neither can I access @116935 account?",
+    "customer_text_raw": "Hey @AmazonHelp why my @115821 account is locked? I cannot access it neither can I access @116935 account?",
+    "historical_brand_reply": "Oh no! Have you received an email from one of our Account Specialists? ^CH",
+    "thread_id": "1085128__1085125",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is locked out of multiple accounts, requiring account verification and private support.",
+      "notes": "Customer shared public account handles (@115821, @116935) which involves account access security."
+    }
+  },
+  {
+    "id": "golden_155",
+    "customer_text": "Don't test someone patient @115851 you guys really beyond pathetic I can use bad word you are intelligent hope you got what I wanna say",
+    "customer_text_raw": "@AmazonHelp Don't test someone patient @115851 you guys really beyond pathetic I can use bad word you are intelligent hope you got what I wanna say",
+    "historical_brand_reply": "I understand your concern. You must've received a correspondence from us. Please check. ^HD",
+    "thread_id": "428998__428999",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely angry and threatening to use profanity, indicating high frustration that requires human intervention.",
+      "notes": "Aggressive tone, contains a veiled threat of using bad words."
+    }
+  },
+  {
+    "id": "golden_156",
+    "customer_text": "Why don't you address my problem instead of suggesting not to share personal details? I don't mind sharing the details. Please address issue",
+    "customer_text_raw": "@AmazonHelp Why don't you address my problem instead of suggesting not to share personal details? I don't mind sharing the details. Please address issue",
+    "historical_brand_reply": "We'd like to help, may I know if you've reported this to our support team through the link shared earlier? ^MA",
+    "thread_id": "435710__435712",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated and willing to share private personal details publicly to resolve their issue.",
+      "notes": "Customer is pushing back against security protocols regarding PII sharing."
+    }
+  },
+  {
+    "id": "golden_157",
+    "customer_text": "Yo @115830 My last review of these candy canes was rejected 'cause of guidelines; there was no swearing or anything. I even read it out> [URL]",
+    "customer_text_raw": "Yo @115830 \nMy last review of these candy canes was rejected 'cause of guidelines; there was no swearing or anything.\nI even read it out&gt; https://t.co/xdz9ihdnGn",
+    "historical_brand_reply": "Try submitting your review again here [URL] ^KM",
+    "thread_id": "2675349__2675347",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple inquiry regarding a rejected review, no sensitive info or urgent financial request.",
+      "notes": "Customer is questioning a review rejection without using inappropriate language."
+    }
+  },
+  {
+    "id": "golden_158",
+    "customer_text": "I keep getting an error message when trying to redeem my @115821 pre-order reward for @115786. Known issue? Fix?",
+    "customer_text_raw": "@115766 I keep getting an error message when trying to redeem my @115821 pre-order reward for @115786. Known issue? Fix?",
+    "historical_brand_reply": "We're sorry to hear about this! What error message are you receiving when attempting to redeem? ^TH",
+    "thread_id": "1505421__1505418",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General technical question about a pre-order reward error that does not require private data or a refund.",
+      "notes": "Customer is asking if a specific error is a known issue."
+    }
+  },
+  {
+    "id": "golden_159",
+    "customer_text": "Someone keeps trying to access my account because I'm getting verification codes sent to my phone as if I forgot my pw. HELP",
+    "customer_text_raw": "@AmazonHelp Someone keeps trying to access my account because I'm getting verification codes sent to my phone as if I forgot my pw. HELP",
+    "historical_brand_reply": "Hey, sorry to hear. Please reach out - [URL] we'll be happy to look into this further for you. ^TP",
+    "thread_id": "727307__727306",
+    "heuristic_intent": "Account / Login Issue",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is reporting potential unauthorized account access and security concerns.",
+      "notes": "Indicates possible credential stuffing or unauthorized login attempts."
+    }
+  },
+  {
+    "id": "golden_160",
+    "customer_text": "2/2 would this be why? Though that was dispatched late yesterday.",
+    "customer_text_raw": "@AmazonHelp 2/2 would this be why? Though that was dispatched late yesterday.",
+    "historical_brand_reply": "They shouldn't affect each other's delivery date. We can check on your orders with you here: [URL] ^AF",
+    "thread_id": "2568049__2568048",
+    "heuristic_intent": "Order Status / Tracking",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Simple inquiry about shipment timing and status without requiring sensitive information or refunds yet.",
+      "notes": "Appears to be part 2 of a threaded conversation regarding a late dispatch."
+    }
+  },
+  {
+    "id": "golden_161",
+    "customer_text": "Are THERE ANY REAL HUMANS our just #BOTS I CAN'T LOST DUE 2 #UPC #GTIN #ASIN #SKU #ISBN #ASI #ABC #XYZ #TGB ETC. NOT I'M LOCKED OUT #BADCUSTOMEREXPERIENCE #HELP #INSANITY [URL]",
+    "customer_text_raw": "@115821 @AmazonHelp Are THERE ANY REAL HUMANS our just #BOTS I CAN'T LOST DUE 2 #UPC #GTIN #ASIN #SKU #ISBN #ASI #ABC #XYZ #TGB ETC. NOT I'M LOCKED OUT #BADCUSTOMEREXPERIENCE #HELP #INSANITY https://t.co/Z5QVIwZoJk",
+    "historical_brand_reply": "So sorry for the trouble, Sylvie! Have you had the chance to report this to us here: [URL] ^VB",
+    "thread_id": "2981909__2981908",
+    "heuristic_intent": "Account / Login Issue",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is locked out of their account, highly frustrated, and questioning if human support is available.",
+      "notes": "Includes multiple hashtags, all caps, and expresses extreme frustration with the login/access issue."
+    }
+  },
+  {
+    "id": "golden_162",
+    "customer_text": "pathetic service and against your return policy where customer is facing challenge and your person is doing anything he want",
+    "customer_text_raw": "@115850 pathetic service and against your return policy where customer is facing challenge and your person is doing anything he want",
+    "historical_brand_reply": "I'm sorry, we'd like to fix this for you. Please fill in your details here: [URL] and we'll contact you. ^JC",
+    "thread_id": "1323297__1323296",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about return policy issues and poor service, expressing strong frustration.",
+      "notes": "Customer is expressing frustration and mentions a dispute over the return policy."
+    }
+  },
+  {
+    "id": "golden_163",
+    "customer_text": "Kind of terrible that @AmazonHelp doesn't let you transfer Prime when you move. Now useless with most of the year left. Why buy again?",
+    "customer_text_raw": "Kind of terrible that @AmazonHelp doesn't let you transfer Prime when you move. Now useless with most of the year left. Why buy again?",
+    "historical_brand_reply": "I'm sorry for the frustration. When you contacted us, what info were you provided? Was there a partial refund option? ^JF",
+    "thread_id": "982017__982015",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration and dissatisfaction regarding a subscription policy and unused value.",
+      "notes": "Expresses strong complaint/frustration about Prime policy constraints when moving."
+    }
+  },
+  {
+    "id": "golden_164",
+    "customer_text": "DMを送信させてもらいました。回答などの返信をお待ちしてます。",
+    "customer_text_raw": "@AmazonHelp DMを送信させてもらいました。回答などの返信をお待ちしてます。",
+    "historical_brand_reply": "DMをお送りいただきありがとうございます。確認しご返信いたしますので、恐れ入りますが、お待ちくださいますようお願いいたします。ET",
+    "thread_id": "1479115__1479114",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "General follow-up regarding a direct message, does not require immediate human escalation or sensitive action.",
+      "notes": "Japanese language message. Customer is following up on a DM they sent."
+    }
+  },
+  {
+    "id": "golden_165",
+    "customer_text": "As a prime member I felt the Amazon services are worst. I got a parcel from blue dart but there is no return for tha",
+    "customer_text_raw": "@115850 @15471 As a prime member I felt the Amazon services are worst.\nI got a parcel from blue dart but there is no return for tha",
+    "historical_brand_reply": "Sorry for the hassle. Please report this to our support team here: [URL] and we'll check this. ^HN",
+    "thread_id": "424056__424055",
+    "heuristic_intent": "Refund / Return",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Refund / Return",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing severe frustration with services as a Prime member and is asking about a return policy/process for a specific parcel.",
+      "notes": "Mentions Prime membership and dissatisfaction with delivery/returns."
+    }
+  },
+  {
+    "id": "golden_166",
+    "customer_text": "Yes... i previously mentioned that in my posts to you! as you said it is released 20, October 2017. So why does my order say Dec 1st?",
+    "customer_text_raw": "@AmazonHelp Yes... i previously mentioned that in my posts to you! as you said it is released 20, October 2017. So why does my order say Dec 1st?",
+    "historical_brand_reply": "Please get in touch here [URL] and we'll investigate. ^BM",
+    "thread_id": "1676491__1676492",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Customer is asking for clarification on an order date based on a previous release date; simple query that does not require escalation.",
+      "notes": "Customer is slightly frustrated about a discrepancy between a release date and an order delivery date."
+    }
+  },
+  {
+    "id": "golden_167",
+    "customer_text": "cuanto cuesta el envió de 2 o 3 libros a Colombia?",
+    "customer_text_raw": "@116928 cuanto cuesta el envió de 2 o  3 libros a Colombia?",
+    "historical_brand_reply": "Hola, Andrés. El costo total del pedido, incluyendo los gastos de envío, serán mostrados antes de finalizar la compra. ^CR",
+    "thread_id": "1777287__1777286",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General shipping cost inquiry that does not require private account info or human intervention.",
+      "notes": "Spanish language query asking about shipping costs to Colombia."
+    }
+  },
+  {
+    "id": "golden_168",
+    "customer_text": "Is there a way to make my @115821 deliveries UPS only and not Amazon courier? UPS has mail key to my apartment, courier does not...",
+    "customer_text_raw": "Is there a way to make my @115821 deliveries UPS only and not Amazon courier? UPS has mail key to my apartment, courier does not...",
+    "historical_brand_reply": "I'm sorry for any inconvenience this may cause, Rachel, but we cannot specify which carrier to use for deliveries. ^FR",
+    "thread_id": "293798__293797",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is asking about carrier preference, which is generally not supported, but it does not require escalation as it's a standard policy/service question."
+    }
+  },
+  {
+    "id": "golden_169",
+    "customer_text": "Hello, wondering if someone can tell me what a 7.99 charge was on my card from \"Amazon Digital Svcs\"?",
+    "customer_text_raw": "@115821 Hello, wondering if someone can tell me what a 7.99 charge was on my card from \"Amazon Digital Svcs\"?",
+    "historical_brand_reply": "Please reach us here: [URL] so we can take a look.^CD",
+    "thread_id": "1254208__1254207",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": true,
+      "escalation_reason": "Customer is asking about an unrecognized credit card charge which requires account verification and private billing details.",
+      "notes": "Could be related to a digital subscription like Prime Video channels or Kindle Unlimited."
+    }
+  },
+  {
+    "id": "golden_170",
+    "customer_text": "No customer focus from Amazon...such a pathetic service Irrespective of the commitments made after escalation...🙃😛😬😠🤧",
+    "customer_text_raw": "@115821 No customer focus from Amazon...such a pathetic service Irrespective of the commitments made after escalation...🙃😛😬😠🤧",
+    "historical_brand_reply": "My apologies for the inconvenience, Anoop. Kindly revert to the email sent for more information and updates. ^KS",
+    "thread_id": "434555__434554",
+    "heuristic_intent": "Complaint / Frustration",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated with failed previous escalations and poor service.",
+      "notes": "Expresses strong dissatisfaction with emojis indicating anger and disappointment."
+    }
+  },
+  {
+    "id": "golden_171",
+    "customer_text": "my account showing I’ve ordered the Earthcam tv... is this something amazon has done?",
+    "customer_text_raw": "@115830 my account showing I’ve ordered the Earthcam tv... is this something amazon has done?",
+    "historical_brand_reply": "Oh no! We'd like to look into this, Peter. We can't view your account here. Pls reach us via phone: [URL] ^AB",
+    "thread_id": "1328810__1328809",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Possible unauthorized order or account compromise requiring account verification and investigation.",
+      "notes": "Customer suspects an order was placed without their consent, which could indicate a security issue."
+    }
+  },
+  {
+    "id": "golden_172",
+    "customer_text": "não pq eu não tinha pagado o cartão de crédito kkkkkkkkkkkkkkkkkkkkkkkk to rindo mas to trist",
+    "customer_text_raw": "@AmazonHelp não pq eu não tinha pagado o cartão de crédito kkkkkkkkkkkkkkkkkkkkkkkk to rindo mas to trist",
+    "historical_brand_reply": "Fica triste não Gabriela! Sempre temos promoções maravilhosas. Fique de olho nas nossas redes sociais para novidades. ^JJ",
+    "thread_id": "708594__708593",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Customer is laughing about forgetting to pay their credit card bill and does not require support or escalation.",
+      "notes": "Non-English (Portuguese), humorous casual remark, no actual support request."
+    }
+  },
+  {
+    "id": "golden_173",
+    "customer_text": "disappointing service bought moto g5s product contains scratch @AmazonHelp [URL]",
+    "customer_text_raw": "disappointing service bought moto g5s product contains scratch @AmazonHelp https://t.co/gaRKNMSKTH",
+    "historical_brand_reply": "Oh no, Debayan. I am sorry to see this. Can you please tell us which marketplace your ordered from such as [URL] [URL] amazon.in? ^LM",
+    "thread_id": "2289198__2289196",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": true,
+      "escalation_reason": "Customer received a damaged/scratched product and is expressing disappointment, likely requiring a replacement or refund.",
+      "notes": "Mentions specific product (moto g5s) and includes a complaint about product condition."
+    }
+  },
+  {
+    "id": "golden_174",
+    "customer_text": "Que me ponga en contacto con el transportista. Me dijo que vendria ayer.",
+    "customer_text_raw": "@AmazonHelp Que me ponga en contacto con el transportista. Me dijo que vendria ayer.",
+    "historical_brand_reply": "Gracias por la información. Contacta con nuestro Servicio al cliente por acá y revisamos contigo: [URL] ^AR",
+    "thread_id": "729192__729197",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Requires contacting a third-party carrier and addressing a missed delivery window.",
+      "notes": "Non-English (Spanish), customer asking to contact the carrier."
+    }
+  },
+  {
+    "id": "golden_175",
+    "customer_text": "No, only an email with following info (see screenshot). If I now change my password I'm still unable to login... He keeps giving the message wrong password. I think my account is somehow blocked, can this be unblocked please? [URL]",
+    "customer_text_raw": "@AmazonHelp No, only an email with following info (see screenshot).\nIf I now change my password I'm still unable to login... He keeps giving the message wrong password.\nI think my account is somehow blocked, can this be unblocked please? https://t.co/2Hh2G3GlKX",
+    "historical_brand_reply": "Hello, I'm sincerely sorry about that :( Our customer service will help you on the following link : [URL] Email : [URL] Phone: 08 05 10 14 20 ^YL",
+    "thread_id": "2878603__2878605",
+    "heuristic_intent": "Account / Login Issue",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is unable to login despite password resets and suspects their account is blocked, requiring manual account investigation.",
+      "notes": "Includes a URL placeholder and mentions a screenshot, indicating an ongoing technical issue."
+    }
+  },
+  {
+    "id": "golden_176",
+    "customer_text": "Once again @115830 have not delivered a parcel (but tracking says delivered Monday) & taken payment for two items poor customer service as well absolutely shocking",
+    "customer_text_raw": "Once again @115830 have not delivered a parcel (but tracking says delivered Monday) &amp; taken payment for two items poor customer service as well absolutely shocking",
+    "historical_brand_reply": "I am so sorry to hear about this, Pete! We'd like to look into this with you and go over available options. Please contact us via phone or chat at the following link: [URL] ^MW",
+    "thread_id": "2950769__2950768",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is claiming a parcel marked as delivered was not received, and is expressing strong frustration with payment and service.",
+      "notes": "Mentions tracking discrepancy, payment dispute, and strong complaint/frustration."
+    }
+  },
+  {
+    "id": "golden_177",
+    "customer_text": "【悲報】アマゾンさん、適当な梱包でCDケースを割る [URL]",
+    "customer_text_raw": "【悲報】アマゾンさん、適当な梱包でCDケースを割る https://t.co/vOVwjZGTyr",
+    "historical_brand_reply": "アマゾンです。ご迷惑をおかけしております。お届けした商品に問題があった場合は交換(可能な場合)または返品を承ります。こちらをご参照ください。[URL] ET",
+    "thread_id": "1100981__1100978",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is complaining about damaged goods due to poor packaging and sharing public dissatisfaction.",
+      "notes": "Written in Japanese, expressing disappointment ('Tragic news') about a damaged CD case."
+    }
+  },
+  {
+    "id": "golden_178",
+    "customer_text": "Tant d'amour entre nous <3",
+    "customer_text_raw": "@AmazonHelp Tant d'amour entre nous &lt;3",
+    "historical_brand_reply": "💐💐",
+    "thread_id": "1682670__1682671",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Simple expression of love and positivity, no action required.",
+      "notes": "Non-English (French), highly positive sentiment, likely meant as praise."
+    }
+  },
+  {
+    "id": "golden_179",
+    "customer_text": "wow. u cant deliver order and now techinically handicapped too. link takes me to another order [URL]",
+    "customer_text_raw": "@115850 @AmazonHelp wow. u cant deliver order and now techinically handicapped too. link takes me to another order https://t.co/S2BxyO0au0",
+    "historical_brand_reply": "Please don't provide your order details, we consider it personal information. Our Twitter page is visible to public. ^HA",
+    "thread_id": "425486__706878",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing a delivery failure combined with a broken tracking link and expressed frustration/sarcasm regarding the system.",
+      "notes": "Contains frustration/sarcasm ('techinically handicapped too') and a broken URL issue."
+    }
+  },
+  {
+    "id": "golden_180",
+    "customer_text": "D'accord, je vais donc faire ça. Merci pour l'information, passez une agréable journée :)",
+    "customer_text_raw": "@AmazonHelp D'accord, je vais donc faire ça. Merci pour l'information, passez une agréable journée :)",
+    "historical_brand_reply": "Agréable journée à vous aussi :)",
+    "thread_id": "813244__813245",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": false,
+      "escalation_reason": "Customer is expressing thanks and ending the conversation with no issue to resolve.",
+      "notes": "Non-English (French), polite closing message."
+    }
+  },
+  {
+    "id": "golden_181",
+    "customer_text": "j’ai eu le support amazon via le chat. C’était juste pour signaler au monde qu’Amazon n’est plus fiable…",
+    "customer_text_raw": "@AmazonHelp j’ai eu le support amazon via le chat. C’était juste pour signaler au monde qu’Amazon n’est plus fiable…",
+    "historical_brand_reply": "J'espère que le problème a été résolu",
+    "thread_id": "651531__651530",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Non-English (French). Customer is expressing general frustration without requesting a specific action or providing PII."
+    }
+  },
+  {
+    "id": "golden_182",
+    "customer_text": "package was supposed to be delivered 3 days ago, now just sitting in a warehouse in gainesville for some reason. what's the point of having prime if 2-day shipping turns into 4-day-and-counting shipping. SMH",
+    "customer_text_raw": "@115821 package was supposed to be delivered 3 days ago, now just sitting in a warehouse in gainesville for some reason. what's the point of having prime if 2-day shipping turns into 4-day-and-counting shipping. SMH",
+    "historical_brand_reply": "Oh no! Sorry to hear this, Jessica! Can you tell us who the carrier is for your package? You can check here for the information: [URL] ^MW",
+    "thread_id": "498385__498383",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": null,
+      "notes": "Customer is frustrated about delayed Prime shipping and a package stuck in a warehouse, but this is a standard delivery issue that does not require human escalation for PII or legal threats."
+    }
+  },
+  {
+    "id": "golden_183",
+    "customer_text": "USPS [URL]",
+    "customer_text_raw": "@115821 USPS https://t.co/YqcfeVGdlB",
+    "historical_brand_reply": "So to clarify, you haven't received these items and haven't received any info on about a delay? ^CN",
+    "thread_id": "2372319__2374526",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "simple tracking link request, no private info shared or complex issue",
+      "notes": "very minimal tweet with just a carrier name and URL"
+    }
+  },
+  {
+    "id": "golden_184",
+    "customer_text": "Touche @115821, instead of throwing it over the fence you just didn't deliver it. Did not see that coming. Hard to be mad, I kind of have to respect it. [URL]",
+    "customer_text_raw": "Touche @115821, instead of throwing it over the fence you just didn't deliver it. Did not see that coming. Hard to be mad, I kind of have to respect it. https://t.co/6GJD0E8wmN",
+    "historical_brand_reply": "I'm sorry it hasn't arrived. Does the tracking show it as delivered: [URL] ^SJ",
+    "thread_id": "2236458__2236456",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "Customer is being sarcastic/humorous and not actually demanding immediate escalation or showing extreme anger.",
+      "notes": "Uses sarcasm regarding a non-delivery."
+    }
+  },
+  {
+    "id": "golden_185",
+    "customer_text": "why does it take 15mins to reflect money added in my Amazon pay balance??? When @122951 and @15645 do it immediately...",
+    "customer_text_raw": "@115850 why does it take 15mins to reflect money added in my Amazon pay balance??? When @122951 and @15645 do it immediately...",
+    "historical_brand_reply": "Sorry for the trouble. It would take a minimum amount of time to get an approval from your bank and proceed with the order.^MM",
+    "thread_id": "2129950__2129949",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is expressing frustration about transaction processing times compared to competitors, but it is a general service question/complaint that does not require private info or financial intervention."
+    }
+  },
+  {
+    "id": "golden_186",
+    "customer_text": "Sent... Pls check.. Email __email__",
+    "customer_text_raw": "@AmazonHelp Sent... Pls check.. Email __email__",
+    "historical_brand_reply": "We're working on this. We'll reach out to you soon. ^SG",
+    "thread_id": "910296__910298",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Other / Miscellaneous",
+      "escalate": true,
+      "escalation_reason": "Customer shared a personal email address publicly, which requires privacy protection and escalation.",
+      "notes": "User shared PII (email address) publicly in the tweet."
+    }
+  },
+  {
+    "id": "golden_187",
+    "customer_text": "Why is my fire stick not workingggg",
+    "customer_text_raw": "Why is my fire stick not workingggg",
+    "historical_brand_reply": "I'm sorry for this issue with your Fire TV Stick. Have you tried restarting it and your network by unplugging them from power? ^DO",
+    "thread_id": "2369688__2369687",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "General troubleshooting question that can be addressed with standard support links without needing account access or financial action.",
+      "notes": "Frustrated tone indicated by extra letters in 'workingggg', but still a basic troubleshooting query."
+    }
+  },
+  {
+    "id": "golden_188",
+    "customer_text": "this is why I pay for prime? To get something in 8 days? [URL]",
+    "customer_text_raw": "@AmazonHelp this is why I pay for prime? To get something in 8 days? https://t.co/0JFjUnMO3l",
+    "historical_brand_reply": "Apologies for the longer than expected wait, Tyler! It appears your order has some extra processing time. Please see more on delivery dates here: [URL] ^CS",
+    "thread_id": "2360539__2360538",
+    "heuristic_intent": "Prime / Subscription",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Prime / Subscription",
+      "escalate": true,
+      "escalation_reason": "Customer is frustrated about delayed delivery on a Prime order and questioning the value of their subscription.",
+      "notes": "Mentions Prime delivery delay and expresses frustration."
+    }
+  },
+  {
+    "id": "golden_189",
+    "customer_text": "Ok thanks, they look great, are iPhones compatible devices??",
+    "customer_text_raw": "@AmazonHelp Ok thanks, they look great, are iPhones compatible devices??",
+    "historical_brand_reply": "Of course! You can use your iPhone to set up the device using the Alexa App. ^MH",
+    "thread_id": "2728909__2728911",
+    "heuristic_intent": "Product / Service Question",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Product / Service Question",
+      "escalate": false,
+      "escalation_reason": "Simple product compatibility question that can be answered publicly and easily.",
+      "notes": "Customer expresses satisfaction initially ('they look great') followed by a direct product question."
+    }
+  },
+  {
+    "id": "golden_190",
+    "customer_text": "No new email. My account says tomorrow but as originally stated, customer service rep “nine” claims it could be up to two more days after that.",
+    "customer_text_raw": "@AmazonHelp No new email.  My account says tomorrow but as originally stated, customer service rep “nine” claims it could be up to two more days after that.",
+    "historical_brand_reply": "Hello, apologies once again for the parcel not being delivered. Here is a link explaining how our delivery estimates are calculated. If the parcel does not arrive withing the dates provided to you, please do let us know:[URL] ^CR",
+    "thread_id": "1786103__1786105",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is following up on conflicting delivery timelines provided by the system and a representative, but it is a standard tracking inquiry not requiring immediate human escalation unless a dispute arises."
+    }
+  },
+  {
+    "id": "golden_191",
+    "customer_text": "I tried two cards. Declining payment. Confirm at your end also. I will to my bank",
+    "customer_text_raw": "@AmazonHelp I tried two cards. Declining payment. Confirm at your end also. I will to my bank",
+    "historical_brand_reply": "I've just checked and can confirm there isn't any issue from our end. Please contact your bank. ^SH",
+    "thread_id": "1096014__1096016",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Account / Login Issue",
+      "escalate": true,
+      "escalation_reason": "Customer is experiencing payment failures with multiple cards, which involves financial transactions and potential account/security verification.",
+      "notes": "Mentions trying two cards and needing to check with their bank. Slightly fragmented English."
+    }
+  },
+  {
+    "id": "golden_192",
+    "customer_text": "Team had order 2 product order number are # 407-7922962-3876303 & # 407-1290032-8514749. due to some network issue (1/2)",
+    "customer_text_raw": "@115850 Team had order 2 product order number are # 407-7922962-3876303 &amp; # 407-1290032-8514749. due to some network issue (1/2)",
+    "historical_brand_reply": "Please don't provide your order details, as we consider them to be personal info. Our page is visible to the public. (2/2)^GK",
+    "thread_id": "1322577__1322575",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": true,
+      "escalation_reason": "Customer shared order numbers publicly and the tweet appears cut off, indicating an unresolved and potentially complex order issue.",
+      "notes": "Tweet is truncated (1/2), indicating a multi-part message."
+    }
+  },
+  {
+    "id": "golden_193",
+    "customer_text": "I got told my order would be delivered today. Then yesterday it said it would be delivered then instead. Fine. Was in all day and eve and nobody even knocked. Then app changed- would be delivered today. Fine. Now order says I have to collect after failed delivery? Why?",
+    "customer_text_raw": "@115830  I got told my order would be delivered today. Then yesterday it said it would be delivered then instead. Fine. Was in all day and eve and nobody even knocked. Then app changed- would be delivered today. Fine. Now order says I have to collect after failed delivery? Why?",
+    "historical_brand_reply": "Hello Michelle! May I ask which carrier is delivering your parcel? Did the carrier leave a calling card?^CN",
+    "thread_id": "2931336__2931335",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "edge_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "",
+      "notes": "Customer is frustrated with changing delivery dates and a missed delivery, but no refund requested or policy violation occurred yet."
+    }
+  },
+  {
+    "id": "golden_194",
+    "customer_text": "The customer service person disconnected on me and now I can't use the chat anymore :(",
+    "customer_text_raw": "@AmazonHelp The customer service person disconnected on me and now I can't use the chat anymore :(",
+    "historical_brand_reply": "Oh no!! Please give us another chance to address this for you! Keep us updated after you speak with us! ^KN",
+    "thread_id": "1152606__1152605",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer experienced a dropped chat session and is locked out of support.",
+      "notes": "Indicates technical or procedural failure by customer support."
+    }
+  },
+  {
+    "id": "golden_195",
+    "customer_text": "please update me on order no 408-1813109-2025931. It's urgent for me.",
+    "customer_text_raw": "@AmazonHelp @115850 please update me on order no 408-1813109-2025931. It's urgent for me.",
+    "historical_brand_reply": "Please don't provide your order details, as we consider it to be personal information. Our Twitter page is public. (2/2)^AU",
+    "thread_id": "2384347__2384346",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Order Status / Tracking",
+      "escalate": false,
+      "escalation_reason": "Standard order status request that can be handled with order tracking information without requiring complex intervention.",
+      "notes": "Customer mentions it's urgent, but it remains a standard tracking inquiry."
+    }
+  },
+  {
+    "id": "golden_196",
+    "customer_text": "#AmazonIndia ORDER # 404-0202620-0249138, No extra games ! Customer care is not resolving my issue and disconnecting the call.",
+    "customer_text_raw": "#AmazonIndia ORDER # 404-0202620-0249138, No extra games ! Customer care is not resolving my issue and disconnecting the call.",
+    "historical_brand_reply": "I understand you've had unpleasant experience with our support team. Could you tell us what went wrong so (1/3) ^ST",
+    "thread_id": "723318__723317",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer is expressing high frustration with customer care disconnecting calls and demands resolution for a specific order.",
+      "notes": "Includes order number; customer is angry about poor service."
+    }
+  },
+  {
+    "id": "golden_197",
+    "customer_text": "Yes! Was supposed to arrive by 8pm on October 13.. looks like I'll get it Monday October 16! 😡",
+    "customer_text_raw": "@AmazonHelp Yes! Was supposed to arrive by 8pm on October 13.. looks like I'll get it Monday October 16! 😡",
+    "historical_brand_reply": "Sorry Haley - is the issue with the carrier or the dispatch ? ^TD",
+    "thread_id": "872180__872182",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": false,
+      "escalation_reason": "Delayed delivery update already shown to customer; does not require complex intervention or PII.",
+      "notes": "Customer is frustrated (indicated by emoji) about a delayed package arriving three days late."
+    }
+  },
+  {
+    "id": "golden_198",
+    "customer_text": "Hey @115821 who do I contact about my order coming with a bottle leaking all over my other products?!???",
+    "customer_text_raw": "Hey @115821 who do I contact about my order coming with a bottle leaking all over my other products?!???",
+    "historical_brand_reply": "Oh no! Well... normally you can request returns or replacements from our Return Center, but you may want to reach out to us directly if the whole order was damaged. You can reach us by phone/chat here: [URL]",
+    "thread_id": "2493711__2493710",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Damaged items upon delivery require intervention, potentially involving replacements or refunds.",
+      "notes": "Customer is frustrated about a leaking bottle damaging other products."
+    }
+  },
+  {
+    "id": "golden_199",
+    "customer_text": "Fantastic. Good work, @115821! Also I definitely didn't request an address change. [URL]",
+    "customer_text_raw": "Fantastic. Good work, @115821! Also I definitely didn't request an address change. https://t.co/CrI8HGQkJP",
+    "historical_brand_reply": "I'm sorry to here your order is delayed! Did we send you an e-mail with an updated delivery date? ^SW",
+    "thread_id": "2356751__2356750",
+    "heuristic_intent": "Other / Miscellaneous",
+    "sampling_category": "stratified",
+    "labels": {
+      "intent": "Complaint / Frustration",
+      "escalate": true,
+      "escalation_reason": "Customer states an unrequested address change was made, which is a potential security/account integrity issue.",
+      "notes": "Includes sarcasm/frustration and a possible account discrepancy."
+    }
+  },
+  {
+    "id": "golden_200",
+    "customer_text": "my order not delivered from last one month, customer service just says, unable to find order, pathetic service, can anyone help??",
+    "customer_text_raw": "@115850 my order not delivered from last one month, customer service just says, unable to find order, pathetic service, can anyone help??",
+    "historical_brand_reply": "Sorry for the ordeal. I’d like to help you; please fill this form: [URL] and I’ll contact you soon.^SC",
+    "thread_id": "2129449__2129448",
+    "heuristic_intent": "Delivery Problem",
+    "sampling_category": "hard_case",
+    "labels": {
+      "intent": "Delivery Problem",
+      "escalate": true,
+      "escalation_reason": "Customer is extremely frustrated about a missing order for a month and previous customer service failure requires human intervention.",
+      "notes": "Displays high customer frustration and mentions failure of previous support attempts."
+    }
+  }
+]
