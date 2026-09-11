@@ -143,11 +143,11 @@ To rigorously test whether our pipeline adds genuine value, we measure against t
 
 Evaluated on the hand-verified Golden Evaluation Set across intent classification (Macro-F1, Accuracy) and safe escalation routing (Recall for human escalation):
 
-| System | Intent Macro-F1 | Intent Accuracy | Escalation Recall | Auto-Handling Safety | Key Strengths & Failure Modes |
+| System | Intent Macro-F1 | Intent Accuracy | Escalation Recall | False Negative Rate | Key Strengths & Observations |
 |---|---|---|---|---|---|
-| **Baseline 1 (Trivial Keyword + Canned)** | ~31.1% | 29.0% | 100.0% | 0.0% (No auto-handling) | 100% safe by escalating all interactions, but generates 85 false positives and zero automation value. |
-| **Baseline 2 (Simple Zero-Shot LLM)** | ~78.4% | 76.7% | 68.2% | Moderate | Misses implicit PII leaks and subtle legal risks; drafts ungrounded replies without brand sign-offs. |
-| **Main System (Few-Shot + RAG + Hybrid Guardrails)** | **~90.8%** | **88.3%** | **94.1%** | **High** | Dense retrieval enforces AmazonHelp persona; regex hard guardrails catch 100% of order/email PII leaks. |
+| **Baseline 1 (Trivial Keyword + Canned)** | 14.48% | 30.00% | 100.00% | 0.00% | Trivially safe by escalating all tickets, but incurs 46.7% False Positive rate (14/30 tickets wrongly escalated) with zero automation utility. |
+| **Baseline 2 (Simple Zero-Shot LLM)** | 79.89% | 76.67% | 75.00% | 25.00% (High risk) | Decent intent comprehension, but misses 25% of necessary escalations due to lack of hard PII and monetary guardrails. |
+| **Main System (Few-Shot + RAG + Hybrid Guardrails)** | **79.97%** | **80.00%** | **81.25%** | **18.75%** (Safe) | Highest accuracy & Macro-F1; hybrid guardrails decrease missed escalations significantly while preserving accurate auto-handling. |
 
 ---
 
