@@ -82,9 +82,10 @@ RE_NON_ASCII = re.compile(r"[^\x00-\x7F]")
 RE_EMOJI = re.compile(
     "[\U0001F600-\U0001F64F\U0001F300-\U0001F5FF\U0001F680-\U0001F6FF"
     "\U0001F1E0-\U0001F1FF\U00002702-\U000027B0\U0001F900-\U0001F9FF"
-    "\U0001FA00-\U0001FA6F\U0001FA70-\U0001FAFF\U00002600-\U000026FF]+",
+    "\U0001FA00-\U0001FA6F\U0001FA70-\U0001FAFF\U00002600-\U000026FF]",
     flags=re.UNICODE,
 )
+RE_PHONE = re.compile(r"(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}")
 
 NON_ENGLISH_SIGNALS = [
     "por favor", "gracias", "merci", "bitte", "danke", "bonjour",
@@ -105,7 +106,7 @@ def is_edge_case(thread: dict) -> bool:
     if len(text) > 250:
         return True
 
-    # Heavy emoji usage
+    # Heavy emoji usage (count individual emoji characters)
     if len(RE_EMOJI.findall(text)) >= 3:
         return True
 
@@ -118,6 +119,8 @@ def is_edge_case(thread: dict) -> bool:
     if re.search(r"\d{3}-\d{7}-\d{7}", text):  # Amazon order ID pattern
         return True
     if re.search(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}", text):
+        return True
+    if RE_PHONE.search(text):
         return True
 
     return False
@@ -194,19 +197,41 @@ def sample_golden_set(
         if remaining:
             remaining_by_intent[intent] = remaining
 
-    # Proportional allocation
-    total_remaining = sum(len(v) for v in remaining_by_intent.values())
+    # Proportional allocation with strict minimum floor guarantee (5 per intent)
+    quotas = {}
+    for intent, items in remaining_by_intent.items():
+        quotas[intent] = min(5, len(items))
+
+    floor_allocated = sum(quotas.values())
+    remaining_budget = max(0, n_stratified - floor_allocated)
+
+    remaining_pool_weights = {
+        intent: max(0, len(items) - quotas[intent])
+        for intent, items in remaining_by_intent.items()
+    }
+    total_pool_weight = sum(remaining_pool_weights.values())
+
+    if total_pool_weight > 0 and remaining_budget > 0:
+        extras = {}
+        for intent, weight in remaining_pool_weights.items():
+            extras[intent] = int(remaining_budget * (weight / total_pool_weight))
+
+        remainder = remaining_budget - sum(extras.values())
+        sorted_by_weight = sorted(
+            remaining_pool_weights.keys(),
+            key=lambda k: (remaining_pool_weights[k], k),
+            reverse=True,
+        )
+        for i in range(remainder):
+            extras[sorted_by_weight[i % len(sorted_by_weight)]] += 1
+
+        for intent in quotas:
+            quotas[intent] += extras.get(intent, 0)
+
     sampled_stratified = []
     for intent, items in remaining_by_intent.items():
-        proportion = len(items) / total_remaining
-        intent_n = max(5, int(n_stratified * proportion))  # min 5 per intent
-        sampled = random.sample(items, min(intent_n, len(items)))
-        sampled_stratified.extend(sampled)
-
-    # Trim if we oversampled
-    if len(sampled_stratified) > n_stratified:
-        random.shuffle(sampled_stratified)
-        sampled_stratified = sampled_stratified[:n_stratified]
+        k = min(quotas[intent], len(items))
+        sampled_stratified.extend(random.sample(items, k))
 
     # Combine
     all_sampled = sampled_edge + sampled_hard + sampled_stratified

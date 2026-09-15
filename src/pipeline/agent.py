@@ -13,7 +13,7 @@ from typing import Optional
 from src.pipeline.classifier import IntentClassifier, ClassificationResult
 from src.pipeline.retriever import Retriever, RetrievedThread
 from src.pipeline.responder import ReplyGenerator, GeneratedReply
-from src.pipeline.escalation import EscalationEngine, EscalationResult
+from src.pipeline.escalation import EscalationEngine, EscalationResult, check_pre_llm_rules
 
 
 @dataclass
@@ -87,6 +87,41 @@ class SupportAgent:
             AgentResponse with all outputs.
         """
         start = time.time()
+
+        # Step 0: Pre-LLM Guardrails (safety, legal threats, public PII, monetary requests)
+        pre_rule = check_pre_llm_rules(customer_text)
+        if pre_rule is not None:
+            if "safety" in pre_rule.triggered_by:
+                draft_reply = "If you are experiencing distress, please reach out to local emergency services or a crisis helpline immediately. We are here to support you. ^CS"
+                intent = "Other / Miscellaneous"
+            elif "legal" in pre_rule.triggered_by:
+                draft_reply = "We take this very seriously. Please reach out to our legal support team via official channels or DM us directly. ^CS"
+                intent = "Complaint / Frustration"
+            elif "pii" in pre_rule.triggered_by:
+                draft_reply = "To protect your personal data, please avoid sharing order numbers or personal details publicly. Please DM us your info so we can assist. ^CS"
+                intent = "Account / Login Issue"
+            elif "monetary" in pre_rule.triggered_by:
+                draft_reply = "For refunds and account billing, verification is required. Please DM us your order details so our team can assist. ^CS"
+                intent = "Refund / Return"
+            else:
+                draft_reply = "Please DM us your details so our customer support team can assist you directly. ^CS"
+                intent = "Other / Miscellaneous"
+
+            elapsed_ms = (time.time() - start) * 1000
+            return AgentResponse(
+                customer_text=customer_text,
+                intent=intent,
+                intent_confidence=1.0,
+                intent_reasoning=f"Pre-LLM guardrail triggered: {pre_rule.reason}",
+                draft_reply=draft_reply,
+                grounding_note="Pre-LLM rule triggered — external model call bypassed for safety.",
+                escalate=pre_rule.escalate,
+                escalation_reason=pre_rule.reason,
+                escalation_confidence=pre_rule.confidence,
+                escalation_triggered_by=pre_rule.triggered_by,
+                retrieved_examples=[],
+                processing_time_ms=elapsed_ms,
+            )
 
         # Step 1: Classify
         classification = self.classifier.classify(customer_text)

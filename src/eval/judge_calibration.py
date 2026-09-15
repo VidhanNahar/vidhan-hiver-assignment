@@ -92,7 +92,12 @@ def calibrate(
     Returns:
         Dict with per-dimension Pearson r, Cohen's κ, MAE, and overall summary.
     """
-    assert len(human_scores) == len(llm_scores), "Score lists must be same length"
+    if not human_scores or not llm_scores:
+        raise ValueError("Score lists must not be empty")
+    if len(human_scores) != len(llm_scores):
+        raise ValueError(
+            f"Score lists must be same length: got {len(human_scores)} human scores and {len(llm_scores)} LLM scores"
+        )
 
     results = {}
 
@@ -166,3 +171,39 @@ def format_calibration_report(results: dict) -> str:
     lines.append("")
 
     return "\n".join(lines)
+
+
+def main():
+    """CLI runner for judge calibration."""
+    import argparse
+    parser = argparse.ArgumentParser(description="Run Judge Calibration (Human vs LLM)")
+    parser.add_argument(
+        "--input",
+        default="data/golden/calibration_scores.json",
+        help="Path to calibration dataset JSON with paired human and llm scores",
+    )
+    args = parser.parse_args()
+
+    input_path = Path(args.input)
+    if not input_path.exists():
+        print(f"[Error] Calibration file not found: {input_path}")
+        return
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    human_scores = [d["human"] for d in data]
+    llm_scores = [d["llm"] for d in data]
+
+    results = calibrate(human_scores, llm_scores)
+    print(format_calibration_report(results))
+
+    out_path = Path("results/judge_calibration.json")
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, indent=2)
+    print(f"Calibration results saved to {out_path}")
+
+
+if __name__ == "__main__":
+    main()

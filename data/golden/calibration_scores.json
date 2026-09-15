@@ -1,0 +1,952 @@
+[
+  {
+    "id": "golden_001",
+    "customer_text": "Hola buenas noches amigos de Amazon M\u00e9xico, una pregunta, \u00bfcomo podr\u00eda hacerme distribuidor o vendedor de Amazon, para vender en donde vivo?",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_002",
+    "customer_text": "\"YOU'VE RUINED CHRISTMAS!\"",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_003",
+    "customer_text": "I just had the worst experience with @115821 ... 3 orders lost, I had to BEG for replacements and honoring the original price, it's been a week and I haven't seen any of them yet. Thanks Amazon Prime \ud83d\ude11",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_004",
+    "customer_text": "gracias!!",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_005",
+    "customer_text": "I am not satisfied with the product I got buying in amazon.in I would like to return ! What is the procedure ? Is it possible !",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_006",
+    "customer_text": "Seems to be working now, without having cleared the cache. The issue was in both the app and the site, so caching wasn\u2019t the issue. Thanks.",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_007",
+    "customer_text": "Done that already sir",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_008",
+    "customer_text": "order ending with 68349 , what is the refund status ? kindly help as executive committed over phone 2 resolve soon",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 3,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_009",
+    "customer_text": "I am still waiting for a reply, I have tweeted, sent dm's and used the contact link I was given. Hope the parcel we have isn't urgent required by the person who bought it!",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_010",
+    "customer_text": "I have a \u2018lost\u2019 parcel but apparently unable to request a replacement. Why is this? What happens next?",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_011",
+    "customer_text": "I kneeeeew it was a bad idea preordered. I knew it.",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_012",
+    "customer_text": "Amazon\u3046\u305c\u3048\u3048\u3048\u3048\u3048\uff01\uff01\uff01\uff01 \u30ea\u30c3\u30d7\u8cb7\u3048\u306a\u3044\u306a\u3089\u8fd4\u91d1\u3057\u3066\u6b32\u3057\u304b\u3063\u305f\u306e\u306b\u306a\u3093\u3067\u30ae\u30d5\u30c8\u5238\u306a\u306e\uff01\uff01\uff01\uff01\u4fdd\u7559\u4e2d\u3067\u4f7f\u3048\u306a\u3044\u3057\u3075\u3056\u3051\u3093\u306a\u3088\ud83d\ude07\ud83d\udd95",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 3,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 2,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_013",
+    "customer_text": "After talking to 3 customer service reps, in which one was a reorder fiasco. He was told that since the seller (Amazon) does not have any in stock there is no replacement. Can't he return it and someone leaves a note that says he gets a replacement when it is back in stock?",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_014",
+    "customer_text": "\u6628\u65e5\u30a2\u30de\u30be\u30f3\u3067\u5546\u54c1\u983c\u3093\u3060\u306e\u306b\u3001\u4e00\u756a\u3059\u3050\u7528\u610f\u3067\u304d\u308b\u3082\u306e\u306e\u652f\u6255\u3044\u756a\u53f7\u3060\u3051\u6765\u3066\u306a\u3044\u3093\u3084\u3051\u3069",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_015",
+    "customer_text": "And u think I did not try this. There is no way to proceed further in this link. I need an exec to call me. I can DM my number if required.",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 4
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 3
+    }
+  },
+  {
+    "id": "golden_016",
+    "customer_text": "vous livrez de nuit ? \ud83d\ude02 [URL]",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 3,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_017",
+    "customer_text": "U please cancel my order",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_018",
+    "customer_text": "Contacted customer service many times. They say they will reach out to courier service. Still no contact from courier.",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 4,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 2,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_019",
+    "customer_text": "Amazon\u306e\u7e26\u9577\u306e\u6bb5\u30dc\u30fc\u30eb\u306b\u559c\u3093\u3067\u304a\u308a\u307e\u3059( \u25e0\u203f\u25e0 )\ud83d\udc96 #amazon #\u30a2\u30de\u30be\u30f3 #\u3044\u3084\u6368\u3066\u3055\u305b\u3066\u4e0b\u3055\u3044 #\u732b [URL]",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_020",
+    "customer_text": "Ne, ich meine einfach generell. Das was passieren w\u00fcrde, wenn ich sage \"Alexa, spiel Musik!\"",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_021",
+    "customer_text": "could you please help me regarding an account that\u2019s been locked",
+    "intent": "Account / Login Issue",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 3,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_022",
+    "customer_text": "who writes you recommendation engine it is truly terrible offering me something I just bought again and the category is also wrong for it.",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_023",
+    "customer_text": "What is this Answer??? completely and clear Is the people foolish ?? [URL]",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_024",
+    "customer_text": "No information apart from Amazon Shipping",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_025",
+    "customer_text": "guys? Really? This delivery person really doesn't like me, how do I get refunded? How can food get damaged? [URL]",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_026",
+    "customer_text": "when is the new season of madam Secretary streaming on your app?",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 3,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 3,
+      "actionability": 3,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_027",
+    "customer_text": "Here or do u want me to send an email ?",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_028",
+    "customer_text": "Mein erstes Paket mit @116316 Logistics und schon eine Entt\u00e4uschung. Wenigstens war euer Support sehr nett.",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_029",
+    "customer_text": "My @115821 order hasn\u2019t even shipped so I guess I\u2019m looking at four day shipping now, at best. \u2639\ufe0f",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_030",
+    "customer_text": "Was charged for kindle unlimited for 9 months in a row without noticing. I don\u2019t even own a kindle. You guys offered to refund only $29 and I still haven\u2019t received it.",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 3,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_031",
+    "customer_text": "Yes. Prime order made on the 29th. Deliver is the 4th of Dec? Order #702-7755580-8617807. Why bother paying for prime?",
+    "intent": "Prime / Subscription",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_032",
+    "customer_text": "I placed an @116090 same day order this morning and it still hasn\u2019t shipped. Why do I get the feeling it\u2019s not showing up today? \ud83e\udd14",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_033",
+    "customer_text": "hi who do I contact to complain bc there was an issue with something I ordered last week :)",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 3,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_034",
+    "customer_text": "so whats next?",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 5,
+      "groundedness": 3,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 3,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_035",
+    "customer_text": "why am i being charged for deliveries above 599? Even my pin code is not in remote area? [URL]",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 3,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_036",
+    "customer_text": "I have already responded to your every email. Which more emails you want me to respond? I have provided you all the required data",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_037",
+    "customer_text": "Where's my package at @AmazonHelp??? My package was late for its 2 day and now have an underliverable today. At least give me my money back",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_038",
+    "customer_text": "had an item gift arrive like this (attempted to peel label off). No outer packaging and clearly been opened (had another label saying checked). How do I give this as a Christmas gift? Looks awful and used! [URL]",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_039",
+    "customer_text": "Would love to know why you \"guaranteed\" delivery for today on five separate orders, and then shipped then USPS which doesn\u2019t deliver",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 4
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_040",
+    "customer_text": "I just tried that and still doesn't work ;-; It was for testing ssssshhhh",
+    "intent": "Product / Service Question",
+    "human": {
+      "relevance": 4,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 3,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_041",
+    "customer_text": "Amazon\u9069\u5f53\u306b\u3044\u308b\u3082\u306e\u30dd\u30c1\u3063\u3066\u305f\u3089\u52dd\u624b\u306b\u30d7\u30e9\u30a4\u30e0\u4f1a\u54e1\u306b\u3055\u308c\u3066\u305f",
+    "intent": "Prime / Subscription",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_042",
+    "customer_text": "5 mins back received order. Why sending damaged product? Order Id: 408-1966445-1659532. It's clearly mentioned on the pack as \"Customer Damage\" then also sending to customer. Poor service. What's the meaning of amazon fulfilled service. Replace it. [URL]",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 4
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_043",
+    "customer_text": "Never use @115821 chat when u have concerns on your package! rude and will pass u to different people if they don\u2019t want to deal with u \ud83d\ude21\ud83d\ude21\ud83d\ude21",
+    "intent": "Complaint / Frustration",
+    "human": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 3,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_044",
+    "customer_text": "Hey @115830 could you advise as to why my next day deliveries are now taking 3 days to arrive, please? Thanks in advance.",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_045",
+    "customer_text": "I have doing followup since 1 month but issue is not yet resolved. it was siad i will get my money back on 11th oct but not yet recived.",
+    "intent": "Refund / Return",
+    "human": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 4
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 4,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 4
+    }
+  },
+  {
+    "id": "golden_046",
+    "customer_text": "Buenas @AmazonHelp llam\u00e9 pero no me sirvi\u00f3 de gran ayuda Quiero mis estuches, por favor se lo pido",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 5,
+      "groundedness": 3,
+      "tone": 5,
+      "actionability": 3,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 3,
+      "tone": 5,
+      "actionability": 2,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_047",
+    "customer_text": "Why is the tracker (uk) saying my Xbox One X will be delivered Wednesday rather than tomorrow? I preordered months ago",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 3,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 3,
+      "groundedness": 3,
+      "tone": 4,
+      "actionability": 4,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_048",
+    "customer_text": "\u3054\u9023\u7d61\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\uff01 \u983c\u3093\u3060\u5546\u54c1\u304c\u307e\u3060\u5c4a\u304b\u306a\u3044\u306e\u3067\u3069\u3053\u306b\u3042\u308b\u306e\u304b\u51fa\u54c1\u8005\u306b\u554f\u3044\u5408\u308f\u305b\u3057\u305f\u3089\u914d\u9001\u696d\u8005\u306b\u3054\u8fd4\u4e8b\u304c\u306a\u3044\u3068\u9023\u7d61\u304c\u304d\u307e\u3057\u3066\u3001\u914d\u9001\u5148\u304chongkongpost\u306a\u3093\u3067\u3059\u3051\u3069\u3001\u8abf\u3079\u305f\u3089\u306a\u304b\u306a\u304b\u8ffd\u8de1\u304c\u51fa\u6765\u305a\u3069\u3046\u3084\u3063\u3066\u554f\u3044\u5408\u308f\u305b\u308c\u3070\u3044\u3044\u304b\u60a9\u3093\u3067\u307e\u3059\u3001\u3001\u3001",
+    "intent": "Delivery Problem",
+    "human": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 4,
+      "tone": 5,
+      "actionability": 3,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_049",
+    "customer_text": "Merci \ud83d\udc4c",
+    "intent": "Other / Miscellaneous",
+    "human": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 4,
+      "groundedness": 5,
+      "tone": 4,
+      "actionability": 5,
+      "safety": 5
+    }
+  },
+  {
+    "id": "golden_050",
+    "customer_text": "Thanks Ordered a lego advent calender for niece on 4th Nove and it is still showing as not dispatched and it was due foe delivery this week!",
+    "intent": "Order Status / Tracking",
+    "human": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    },
+    "llm": {
+      "relevance": 5,
+      "groundedness": 5,
+      "tone": 5,
+      "actionability": 4,
+      "safety": 5
+    }
+  }
+]

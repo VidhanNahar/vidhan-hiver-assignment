@@ -1,6 +1,7 @@
 # Core
 openai>=1.30.0
 python-dotenv>=1.0.0
+pyyaml>=6.0
 
 # Embeddings & Vector Store
 sentence-transformers>=3.0.0

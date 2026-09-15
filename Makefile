@@ -1,12 +1,12 @@
 PYTHON := $(shell [ -f .venv/bin/python3 ] && echo .venv/bin/python3 || echo python3)
 
-.PHONY: setup preprocess sample auto-label eval-main eval-trivial eval-simple eval-all demo clean help
+.PHONY: setup preprocess explore sample auto-label eval-main eval-trivial eval-simple eval-all eval-nojudge calibrate demo clean help
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 setup: ## Install dependencies and set up environment
-	python3 -m venv .venv || true
+	python3 -m venv .venv
 	.venv/bin/pip install --upgrade pip
 	.venv/bin/pip install -r requirements.txt
 	@echo "\n✅ Setup complete. Activate with: source .venv/bin/activate"
@@ -39,6 +39,9 @@ eval-all: ## Evaluate all systems and print comparison
 
 eval-nojudge: ## Evaluate all systems without LLM judge (saves API cost)
 	$(PYTHON) -m src.eval.run_eval --system all --skip-judge
+
+calibrate: ## Run human vs LLM judge agreement calibration
+	$(PYTHON) -m src.eval.judge_calibration
 
 demo: ## Run interactive demo
 	$(PYTHON) -m src.pipeline.agent

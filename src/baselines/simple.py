@@ -10,7 +10,7 @@ import json
 from dataclasses import dataclass
 from openai import OpenAI
 
-from src.config import OPENAI_API_KEY, PIPELINE_MODEL, get_openai_client
+from src.config import OPENAI_API_KEY, PIPELINE_MODEL, get_openai_client, parse_bool
 from src.pipeline.classifier import VALID_INTENTS
 
 
@@ -44,7 +44,7 @@ class SimpleBaseline:
 
     def __init__(self, model: str = None, api_key: str = None):
         self.model = model or PIPELINE_MODEL
-        self.client = get_openai_client()
+        self.client = get_openai_client(api_key=api_key)
 
     def process(self, customer_text: str) -> SimpleResponse:
         try:
@@ -66,7 +66,7 @@ class SimpleBaseline:
             reply = parsed.get("reply", "Please DM us your details so we can help. ^CS")
             if len(reply) > 280:
                 reply = reply[:277] + "..."
-            escalate = bool(parsed.get("escalate", True))
+            escalate = parse_bool(parsed.get("escalate"), default=True)
             reason = parsed.get("reason", "No reason provided.")
         except Exception as e:
             intent = "Other / Miscellaneous"

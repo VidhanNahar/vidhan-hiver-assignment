@@ -88,11 +88,19 @@ def main():
                 if intent not in VALID_INTENTS:
                     intent = "Other / Miscellaneous"
 
+                raw_esc = parsed.get("escalate")
+                if isinstance(raw_esc, bool):
+                    esc_val = raw_esc
+                elif isinstance(raw_esc, str) and raw_esc.strip().lower() in ("true", "false"):
+                    esc_val = raw_esc.strip().lower() == "true"
+                else:
+                    esc_val = None
+
                 data[idx]["labels"] = {
                     "intent": intent,
-                    "escalate": bool(parsed.get("escalate", True)),
+                    "escalate": esc_val,
                     "escalation_reason": parsed.get("escalation_reason", ""),
-                    "notes": parsed.get("notes", ""),
+                    "notes": parsed.get("notes", "") if esc_val is not None else "NEEDS MANUAL REVIEW (malformed escalate value)",
                 }
                 fixed += 1
 

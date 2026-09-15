@@ -34,16 +34,22 @@ RE_URL = re.compile(r"https?://\S+")
 # Pattern: multiple whitespace
 RE_MULTI_SPACE = re.compile(r"\s+")
 
+# Pattern: PII (order IDs, emails, phone numbers)
+RE_ORDER_ID = re.compile(r"\d{3}-\d{7}-\d{7}")
+RE_EMAIL = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+RE_PHONE = re.compile(r"(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}")
 
-def clean_text(text: str) -> str:
+
+def clean_text(text: str, redact_pii: bool = True) -> str:
     """Clean a single tweet's text.
 
     Steps:
       1. Decode HTML entities (&amp; → &, etc.)
       2. Remove leading @mentions (brand/customer handles at start)
       3. Replace URLs with [URL] placeholder
-      4. Collapse multiple whitespace into single space
-      5. Strip leading/trailing whitespace
+      4. Redact PII (order IDs, emails, phone numbers) to protect privacy
+      5. Collapse multiple whitespace into single space
+      6. Strip leading/trailing whitespace
     """
     # HTML entities
     text = html.unescape(text)
@@ -53,6 +59,12 @@ def clean_text(text: str) -> str:
 
     # Replace URLs
     text = RE_URL.sub("[URL]", text)
+
+    # Redact sensitive PII before indexing or prompting
+    if redact_pii:
+        text = RE_ORDER_ID.sub("[ORDER_ID]", text)
+        text = RE_EMAIL.sub("[EMAIL]", text)
+        text = RE_PHONE.sub("[PHONE]", text)
 
     # Collapse whitespace
     text = RE_MULTI_SPACE.sub(" ", text)
@@ -195,19 +207,31 @@ def _build_full_thread(start_tweet_id: str, all_tweets: dict, max_depth: int = 1
     backward_chain.reverse()
     thread_msgs.extend(backward_chain)
 
-    # Walk forwards from start tweet via response_tweet_id
-    current_id = start_tweet_id
-    tweet = all_tweets.get(current_id)
-    if tweet:
-        response_ids = tweet.get("response_tweet_id", "").strip()
+    # Walk forwards from start tweet via response_tweet_id queue up to max_depth
+    queue = []
+    start_tweet = all_tweets.get(start_tweet_id)
+    if start_tweet:
+        response_ids = start_tweet.get("response_tweet_id", "").strip()
         if response_ids:
             for rid in response_ids.split(","):
                 rid = rid.strip()
                 if rid and rid not in visited:
-                    visited.add(rid)
-                    resp_tweet = all_tweets.get(rid)
-                    if resp_tweet:
-                        thread_msgs.append(resp_tweet)
+                    queue.append((rid, 1))
+
+    while queue:
+        curr_rid, curr_depth = queue.pop(0)
+        if curr_depth > max_depth or curr_rid in visited:
+            continue
+        visited.add(curr_rid)
+        resp_tweet = all_tweets.get(curr_rid)
+        if resp_tweet:
+            thread_msgs.append(resp_tweet)
+            next_resp_ids = resp_tweet.get("response_tweet_id", "").strip()
+            if next_resp_ids and curr_depth < max_depth:
+                for nxt in next_resp_ids.split(","):
+                    nxt = nxt.strip()
+                    if nxt and nxt not in visited:
+                        queue.append((nxt, curr_depth + 1))
 
     # Format for output
     formatted = []

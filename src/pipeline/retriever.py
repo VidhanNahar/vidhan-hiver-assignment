@@ -13,7 +13,14 @@ import chromadb
 from chromadb.config import Settings
 from sentence_transformers import SentenceTransformer
 
-from src.config import CHROMA_DB_PATH, PROCESSED_DATA_PATH, RETRIEVER_TOP_K
+from src.config import (
+    CHROMA_DB_PATH,
+    PROCESSED_DATA_PATH,
+    SAMPLE_FIXTURE_PATH,
+    GOLDEN_SET_PATH,
+    RETRIEVER_TOP_K,
+    RETRIEVER_INDEX_SIZE,
+)
 
 
 @dataclass
@@ -35,11 +42,15 @@ class Retriever:
         self,
         chroma_path: str = None,
         data_path: str = None,
+        golden_set_path: str = None,
         top_k: int = None,
+        index_size: int = None,
     ):
         self.chroma_path = chroma_path or CHROMA_DB_PATH
         self.data_path = data_path or PROCESSED_DATA_PATH
+        self.golden_set_path = golden_set_path or GOLDEN_SET_PATH
         self.top_k = top_k or RETRIEVER_TOP_K
+        self.index_size = index_size or RETRIEVER_INDEX_SIZE
 
         # Load embedding model
         print(f"[Retriever] Loading embedding model: {EMBEDDING_MODEL_NAME}...")
@@ -53,34 +64,94 @@ class Retriever:
 
         self.collection = self._get_or_create_collection()
 
+    def _resolve_data_path(self) -> Path:
+        """Resolve dataset path, falling back to bundled sample fixture if processed data is missing."""
+        path = Path(self.data_path)
+        if path.exists():
+            return path
+        fixture_path = Path(SAMPLE_FIXTURE_PATH)
+        if fixture_path.exists():
+            print(f"[Retriever] Notice: {path} not found. Falling back to bundled fixture at {fixture_path} for retrieval index.")
+            return fixture_path
+        raise FileNotFoundError(
+            f"Neither processed data ({path}) nor sample fixture ({fixture_path}) was found. "
+            "Please run 'make preprocess' or provide a dataset fixture."
+        )
+
     def _get_or_create_collection(self) -> chromadb.Collection:
         """Get existing collection or build it from processed data."""
+        meta_file = Path(self.chroma_path) / ".index_meta.json"
+        actual_path = self._resolve_data_path()
+
         collection = self.client.get_or_create_collection(
             name=COLLECTION_NAME,
             metadata={"hnsw:space": "cosine"},
         )
 
-        # Check if already populated
-        if collection.count() > 0:
-            print(f"[Retriever] Collection exists with {collection.count():,} documents.")
-            return collection
+        # Check if already populated and verified complete
+        if collection.count() > 0 and meta_file.exists():
+            try:
+                with open(meta_file, "r", encoding="utf-8") as f:
+                    meta = json.load(f)
+                if meta.get("status") == "complete" and meta.get("count") == collection.count():
+                    print(f"[Retriever] Verified complete collection with {collection.count():,} documents.")
+                    return collection
+            except Exception:
+                pass
+            print("[Retriever] Detected incomplete or stale index. Re-indexing...")
+            try:
+                self.client.delete_collection(name=COLLECTION_NAME)
+            except Exception:
+                pass
+            collection = self.client.get_or_create_collection(
+                name=COLLECTION_NAME,
+                metadata={"hnsw:space": "cosine"},
+            )
 
         # Build the collection from processed data
-        print(f"[Retriever] Building collection from {self.data_path}...")
-        self._index_threads(collection)
+        print(f"[Retriever] Building collection from {actual_path}...")
+        self._index_threads(collection, actual_path)
+
+        # Persist completion marker
+        try:
+            with open(meta_file, "w", encoding="utf-8") as f:
+                json.dump({
+                    "status": "complete",
+                    "count": collection.count(),
+                    "data_source": str(actual_path),
+                }, f)
+        except Exception as e:
+            print(f"[Retriever] Warning: Could not save index metadata: {e}")
+
         return collection
 
-    def _index_threads(self, collection: chromadb.Collection):
-        """Index all processed threads into ChromaDB."""
-        with open(self.data_path, "r", encoding="utf-8") as f:
+    def _index_threads(self, collection: chromadb.Collection, data_path: Path):
+        """Index processed threads into ChromaDB while strictly excluding golden evaluation threads."""
+        with open(data_path, "r", encoding="utf-8") as f:
             threads = json.load(f)
 
-        # Use a subsample for indexing (full 151K would be slow)
-        # We keep a diverse 10K sample for retrieval quality vs speed
+        # Disjoint evaluation split: Exclude golden set threads to prevent data leakage
+        golden_ids = set()
+        golden_path = Path(self.golden_set_path)
+        if golden_path.exists():
+            try:
+                with open(golden_path, "r", encoding="utf-8") as gf:
+                    golden_data = json.load(gf)
+                golden_ids = {g["thread_id"] for g in golden_data if "thread_id" in g}
+            except Exception as e:
+                print(f"[Retriever] Warning: Could not read golden set to filter exclusions: {e}")
+
+        initial_len = len(threads)
+        threads = [t for t in threads if t.get("thread_id") not in golden_ids]
+        excluded = initial_len - len(threads)
+        if excluded > 0:
+            print(f"[Retriever] Excluded {excluded} golden evaluation threads to prevent test-set data leakage.")
+
+        # Subsample for indexing (e.g. 10K sample for retrieval quality vs speed)
         import random
         random.seed(42)
-        if len(threads) > 10000:
-            threads = random.sample(threads, 10000)
+        if len(threads) > self.index_size:
+            threads = random.sample(threads, self.index_size)
             print(f"[Retriever] Subsampled to {len(threads):,} threads for indexing.")
 
         batch_size = 500

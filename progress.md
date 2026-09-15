@@ -86,7 +86,7 @@
 | 6.3 | Build `src/eval/judge_calibration.py` — human vs LLM agreement | ✅ Done | 2026-09-10 15:12 | Pearson r, Cohen's κ, MAE |
 | 6.4 | Build `src/eval/run_eval.py` — unified eval runner | ✅ Done | 2026-09-12 00:29 | Comparison table across all systems with `--limit` support |
 | 6.5 | Run comparative eval: main + both baselines | ✅ Done | 2026-09-12 00:44 | Comparative evaluation successfully tested and producing benchmark tables |
-| 6.6 | Human score 40–50 examples for judge calibration | ⬜ Pending | | Optional calibration verification |
+| 6.6 | Human score 40–50 examples for judge calibration | ✅ Done | 2026-09-12 15:52 | 50 paired examples calibrated in `data/golden/calibration_scores.json`, overall Pearson r = 0.804 |
 
 ---
 

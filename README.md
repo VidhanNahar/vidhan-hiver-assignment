@@ -36,6 +36,9 @@ EMBEDDING_PROVIDER=local
 
 ### 2. Run Headline Evaluation (Full Comparison)
 
+> [!NOTE]
+> **Zero-Setup Quickstart**: The repository includes a bundled sample fixture (`data/fixtures/sample_threads.json`) and the 200 hand-verified golden set (`data/golden/golden_set.json`), allowing `make eval-nojudge`, `make calibrate`, and `make demo` to run immediately on a fresh clone without downloading the raw 500MB Kaggle dataset first.
+
 To reproduce the benchmark comparison against the Golden Evaluation Set (200 curated and verified examples):
 
 ```bash
@@ -133,9 +136,10 @@ To rigorously test whether our pipeline adds genuine value, we measure against t
 
 ## Deliverables Summary
 
-- **Golden Evaluation Set**: [`data/golden/golden_set.json`](file:///home/vidhan/Documents/Github/vidhan-hiver-assignment/data/golden/golden_set.json) (200 curated examples with sampling methodology documented in [`data/golden/labelling_notes.md`](file:///home/vidhan/Documents/Github/vidhan-hiver-assignment/data/golden/labelling_notes.md))
-- **Decision Log**: [`decision_log.md`](file:///home/vidhan/Documents/Github/vidhan-hiver-assignment/decision_log.md) (13 non-obvious engineering decisions and trade-offs)
-- **Evaluation Harness**: [`src/eval/run_eval.py`](file:///home/vidhan/Documents/Github/vidhan-hiver-assignment/src/eval/run_eval.py)
+- **Golden Evaluation Set**: [`data/golden/golden_set.json`](data/golden/golden_set.json) (200 curated examples with sampling methodology documented in [`data/golden/labelling_notes.md`](data/golden/labelling_notes.md))
+- **Judge Calibration Set**: [`data/golden/calibration_scores.json`](data/golden/calibration_scores.json) (50 paired human vs LLM evaluations substantiating rubric agreement; run `make calibrate`)
+- **Decision Log**: [`decision_log.md`](decision_log.md) (13 non-obvious engineering decisions and trade-offs)
+- **Evaluation Harness**: [`src/eval/run_eval.py`](src/eval/run_eval.py)
 
 ---
 
@@ -218,7 +222,7 @@ To evaluate an AI system honestly, we must be critical of headline metrics:
 
 ## Decision Log Summary
 
-A detailed record of 13 non-obvious engineering decisions and their rationales is documented in [`decision_log.md`](file:///home/vidhan/Documents/Github/vidhan-hiver-assignment/decision_log.md):
+A detailed record of 13 non-obvious engineering decisions and their rationales is documented in [`decision_log.md`](decision_log.md):
 - *Decision 1*: Brand Selection (AmazonHelp chosen for volume and distinct operational escalation boundaries).
 - *Decision 4*: Local sentence-transformers (`all-MiniLM-L6-v2`) chosen over proprietary embeddings for 100% free reproducibility.
 - *Decision 6*: Hybrid rule-plus-LLM escalation guardrails to guarantee zero false negatives on PII leaks and legal threats.

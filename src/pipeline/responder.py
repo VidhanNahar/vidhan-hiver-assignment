@@ -6,6 +6,7 @@ similar brand responses. Enforces safety constraints.
 """
 
 import json
+import re
 from dataclasses import dataclass
 from openai import OpenAI
 
@@ -17,6 +18,55 @@ from src.pipeline.retriever import RetrievedThread
 class GeneratedReply:
     reply: str
     grounding_note: str  # which retrieved examples influenced the reply
+
+
+RE_SIG = re.compile(r"(\s*\^[A-Za-z]{2,3})$")
+RE_ORDER_ID = re.compile(r"\d{3}-\d{7}-\d{7}")
+RE_EMAIL = re.compile(r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}")
+RE_PHONE = re.compile(r"(?:\+?\d{1,3}[-.\s]?)?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}")
+
+
+def truncate_tweet(text: str, max_len: int = 280) -> str:
+    """Truncate tweet cleanly without slicing signatures or words arbitrarily."""
+    if len(text) <= max_len:
+        return text
+
+    # Check for trailing agent signature like ^JM or ^CS
+    sig_match = RE_SIG.search(text)
+    suffix = ""
+    if sig_match:
+        suffix = sig_match.group(1)
+        text = text[:sig_match.start()].strip()
+
+    available = max_len - len(suffix) - 3  # room for '...'
+    if available <= 0:
+        return text[:max_len]
+
+    truncated = text[:available]
+    # Break on last whitespace to avoid chopping words or links mid-character
+    last_space = truncated.rfind(" ")
+    if last_space > available // 2:
+        truncated = truncated[:last_space]
+
+    return f"{truncated.rstrip()}...{suffix}"
+
+
+def sanitize_reply(reply: str) -> str:
+    """Validate and sanitize generated reply against PII leaks and character bounds."""
+    # Redact any accidental order ID / PII echoes
+    reply = RE_ORDER_ID.sub("[ORDER_ID]", reply)
+    reply = RE_EMAIL.sub("[EMAIL]", reply)
+    reply = RE_PHONE.sub("[PHONE]", reply)
+
+    # Ensure signature exists
+    if not RE_SIG.search(reply):
+        reply = f"{reply.rstrip()} ^CS"
+
+    # Enforce tweet length with signature preservation
+    if len(reply) > 280:
+        reply = truncate_tweet(reply, max_len=280)
+
+    return reply
 
 
 SYSTEM_PROMPT = """You are AmazonHelp, the official Amazon customer support account on Twitter.
@@ -69,7 +119,7 @@ class ReplyGenerator:
 
     def __init__(self, model: str = None, api_key: str = None):
         self.model = model or PIPELINE_MODEL
-        self.client = get_openai_client()
+        self.client = get_openai_client(api_key=api_key)
 
     def generate(
         self,
@@ -107,9 +157,7 @@ class ReplyGenerator:
             reply = parsed.get("reply", "").strip()
             grounding_note = parsed.get("grounding_note", "").strip()
 
-            # Enforce tweet length
-            if len(reply) > 280:
-                reply = reply[:277] + "..."
+            reply = sanitize_reply(reply)
 
             return GeneratedReply(
                 reply=reply,

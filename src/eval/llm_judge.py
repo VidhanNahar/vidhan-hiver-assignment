@@ -85,7 +85,7 @@ class LLMJudge:
 
     def __init__(self, model: str = None, api_key: str = None):
         self.model = model or JUDGE_MODEL
-        self.client = get_openai_client()
+        self.client = get_openai_client(api_key=api_key)
 
     def score(
         self,

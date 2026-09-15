@@ -13,7 +13,7 @@ import re
 from dataclasses import dataclass
 from openai import OpenAI
 
-from src.config import OPENAI_API_KEY, PIPELINE_MODEL, get_openai_client
+from src.config import OPENAI_API_KEY, PIPELINE_MODEL, LOW_CONFIDENCE_THRESHOLD, get_openai_client, parse_bool
 from src.pipeline.classifier import ClassificationResult
 
 
@@ -22,7 +22,7 @@ class EscalationResult:
     escalate: bool
     reason: str
     confidence: float
-    triggered_by: str  # "hard_rule" or "llm_decision"
+    triggered_by: str  # "hard_rule", "pre_llm_guardrail", or "llm_decision"
 
 
 # ---------------------------------------------------------------------------
@@ -53,10 +53,10 @@ RE_MONETARY = re.compile(
 )
 
 
-def _check_hard_rules(customer_text: str, classification: ClassificationResult) -> EscalationResult | None:
-    """Check hard rules that always trigger escalation.
+def check_pre_llm_rules(customer_text: str) -> EscalationResult | None:
+    """Pre-LLM guardrail checks for safety, legal threats, PII exposure, and monetary requests.
 
-    Returns EscalationResult if a rule matches, None otherwise.
+    Must be run before invoking external LLM models or retrievers to prevent data leakage.
     """
     text = customer_text
 
@@ -66,7 +66,7 @@ def _check_hard_rules(customer_text: str, classification: ClassificationResult) 
             escalate=True,
             reason="Customer mentions legal action — requires human review.",
             confidence=1.0,
-            triggered_by="hard_rule",
+            triggered_by="hard_rule_legal",
         )
 
     # Rule 2: Safety concerns
@@ -75,7 +75,7 @@ def _check_hard_rules(customer_text: str, classification: ClassificationResult) 
             escalate=True,
             reason="Potential safety concern detected — immediate human attention required.",
             confidence=1.0,
-            triggered_by="hard_rule",
+            triggered_by="hard_rule_safety",
         )
 
     # Rule 3: PII exposure in public tweet
@@ -84,7 +84,7 @@ def _check_hard_rules(customer_text: str, classification: ClassificationResult) 
             escalate=True,
             reason="Customer shared personal information (order ID, email, or phone) publicly — needs private follow-up to protect PII.",
             confidence=1.0,
-            triggered_by="hard_rule",
+            triggered_by="hard_rule_pii",
         )
 
     # Rule 4: Monetary requests (refunds require account verification)
@@ -93,16 +93,28 @@ def _check_hard_rules(customer_text: str, classification: ClassificationResult) 
             escalate=True,
             reason="Customer requests monetary action (refund/reimbursement) — requires account verification by a human agent.",
             confidence=0.95,
-            triggered_by="hard_rule",
+            triggered_by="hard_rule_monetary",
         )
 
+    return None
+
+
+def _check_hard_rules(customer_text: str, classification: ClassificationResult) -> EscalationResult | None:
+    """Check hard rules that always trigger escalation.
+
+    Returns EscalationResult if a rule matches, None otherwise.
+    """
+    pre_llm = check_pre_llm_rules(customer_text)
+    if pre_llm is not None:
+        return pre_llm
+
     # Rule 5: Low classifier confidence
-    if classification.confidence < 0.4:
+    if classification.confidence < LOW_CONFIDENCE_THRESHOLD:
         return EscalationResult(
             escalate=True,
-            reason=f"Intent classification confidence is low ({classification.confidence:.2f}) — human should review to ensure correct handling.",
+            reason=f"Intent classification confidence is low ({classification.confidence:.2f} < {LOW_CONFIDENCE_THRESHOLD}) — human should review to ensure correct handling.",
             confidence=0.85,
-            triggered_by="hard_rule",
+            triggered_by="hard_rule_low_confidence",
         )
 
     return None
@@ -134,7 +146,7 @@ class EscalationEngine:
 
     def __init__(self, model: str = None, api_key: str = None):
         self.model = model or PIPELINE_MODEL
-        self.client = get_openai_client()
+        self.client = get_openai_client(api_key=api_key)
 
     def decide(
         self,
@@ -190,7 +202,7 @@ class EscalationEngine:
             parsed = json.loads(raw)
 
             return EscalationResult(
-                escalate=bool(parsed.get("escalate", True)),
+                escalate=parse_bool(parsed.get("escalate"), default=True),
                 reason=parsed.get("reason", "No reason provided."),
                 confidence=float(parsed.get("confidence", 0.5)),
                 triggered_by="llm_decision",
